@@ -121,7 +121,19 @@
             </div>
             
             <div class="features-grid">
-                <!-- Feature Card 1 -->
+                <!-- Feature Card 1: 홈 화면 -->
+                <div class="feature-card scroll-reveal">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9 22 9 12 15 12 15 22"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">기록 중심 홈 대시보드</h3>
+                    <p class="feature-desc">독서 자극 명언 배너, 직관적인 독서 목표 게이지, 누적 독서 시간 및 최근 기록한 감상 피드를 한눈에 확인할 수 있습니다.</p>
+                </div>
+
+                <!-- Feature Card 2: 내 서재 -->
                 <div class="feature-card scroll-reveal">
                     <div class="feature-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -129,11 +141,38 @@
                             <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">스마트 서재 관리</h3>
-                    <p class="feature-desc">읽고 싶은 책, 읽고 있는 책, 끝까지 완독한 책을 카테고리별로 정밀하게 구분하여 체계적인 서재를 완성할 수 있습니다.</p>
+                    <h3 class="feature-title">분류별 스마트 서재</h3>
+                    <p class="feature-desc">'등록된 책'과 '감상평' 분류 탭, 독서 상태 필터링 칩(읽는 중, 예정, 완독)을 통해 서재를 체계적으로 분류하고 빠르게 검색할 수 있습니다.</p>
                 </div>
 
-                <!-- Feature Card 2 -->
+                <!-- Feature Card 3: 도서 검색 및 스캔 -->
+                <div class="feature-card scroll-reveal">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                            <circle cx="12" cy="13" r="4"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">바코드 스캔 & 탐색</h3>
+                    <p class="feature-desc">카메라 연동 ISBN 바코드 인식을 통해 책을 1초 만에 등록하며, 도서 검색 API 및 베스트셀러 추천 피드로 책을 신속히 찾습니다.</p>
+                </div>
+
+                <!-- Feature Card 4: 도서 상세 -->
+                <div class="feature-card scroll-reveal">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10 9 9 9 8 9"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">도서 상세 & 트래킹</h3>
+                    <p class="feature-desc">책 소개 및 페이지 수 정보를 확인하고, 누적 독서량 진행률을 수정하거나 구매 브릿지 연동 및 본인의 감상평 타임라인을 모아 봅니다.</p>
+                </div>
+
+                <!-- Feature Card 5: 독서 타이머 -->
                 <div class="feature-card scroll-reveal">
                     <div class="feature-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -141,23 +180,11 @@
                             <polyline points="12 6 12 12 16 14"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">실시간 독서 타이머</h3>
-                    <p class="feature-desc">독서 모드를 켜고 타이머를 시작하여 순수 집중 독서 시간을 기록하고, 누적 분석 데이터의 척도로 활용하세요.</p>
+                    <h3 class="feature-title">집중 독서 타이머</h3>
+                    <p class="feature-desc">정밀한 독서 시간 계측, 페이지 차이(Delta) 및 전체 대비 백분율(%) 입력 방식을 제공하며, 저장 시 기록 유실 방지 잠금 레이어를 지원합니다.</p>
                 </div>
 
-                <!-- Feature Card 3 -->
-                <div class="feature-card scroll-reveal">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 20h9"/>
-                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">감상평 & 스크랩북</h3>
-                    <p class="feature-desc">마음에 와닿은 책의 핵심 문장을 카메라로 스캔하거나 글로 작성하고, 떠오르는 생각을 차곡차곡 스크랩북에 기록하세요.</p>
-                </div>
-
-                <!-- Feature Card 4 -->
+                <!-- Feature Card 6: 독서 통계 -->
                 <div class="feature-card scroll-reveal">
                     <div class="feature-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -166,32 +193,55 @@
                             <line x1="6" y1="20" x2="6" y2="14"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">비주얼 독서 통계</h3>
-                    <p class="feature-desc">월간 완독 권수, 선호 장르 분포, 일별 독서 시간 변화 등을 세련되고 직관적인 인터랙티브 차트로 한눈에 보여줍니다.</p>
+                    <h3 class="feature-title">입체적인 독서 통계</h3>
+                    <p class="feature-desc">일간 독서 시간 추이(꺾은선 차트), 분야별 선호 장르(도넛 차트), 그리고 책을 읽은 날을 하이라이팅해 주는 출석 달력을 시각화합니다.</p>
                 </div>
 
-                <!-- Feature Card 5 -->
+                <!-- Feature Card 7: 감상평 상세 -->
+                <div class="feature-card scroll-reveal">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">생각 블록 감상평</h3>
+                    <p class="feature-desc">인용구와 평점, 감정을 분리 기입하고, 단락별(생각, 리뷰, 추천 이유 등) 블록 조립 및 시인성을 극대화한 가독성 테마 템플릿을 지원합니다.</p>
+                </div>
+
+                <!-- Feature Card 8: 이미지 저장 및 크롭 -->
+                <div class="feature-card scroll-reveal">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <polyline points="21 15 16 10 5 21"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">감각적인 이미지 저장</h3>
+                    <p class="feature-desc">독서 기록 카드를 소장 및 공유하기 전, 인스타그램에 최적화된 1:1, 9:16 비율 프리셋 제공 및 드래그 조작형 크롭 가이드로 미세 조정하여 저장합니다.</p>
+                </div>
+
+                <!-- Feature Card 9: AI 독서 리포트 -->
                 <div class="feature-card scroll-reveal">
                     <div class="feature-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">목표 설정 및 업적 배지</h3>
-                    <p class="feature-desc">일 년 동안 읽을 목표 권수를 수립하고 달성률을 추적하며, 다양한 도전 과제를 클리어하여 아기자기한 업적 배지를 모아보세요.</p>
+                    <h3 class="feature-title">Gemini AI 독서 리포트</h3>
+                    <p class="feature-desc">Gemini 1.5 Flash를 연동하여 독서 통계 기반 독서 페르소나 도출, 필체/독서 패턴 분석, 그리고 내 서재 데이터를 근거로 한 책 추천을 제공합니다.</p>
                 </div>
 
-                <!-- Feature Card 6 -->
+                <!-- Feature Card 10: 업적 화면 -->
                 <div class="feature-card scroll-reveal">
                     <div class="feature-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                            <line x1="8" y1="21" x2="16" y2="21"/>
-                            <line x1="12" y1="17" x2="12" y2="21"/>
+                            <path d="M12 2l3.09 6.26 6.91 1.01-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">간편한 검색 & 데이터 연동</h3>
-                    <p class="feature-desc">방대한 네이버/카카오 도서 데이터베이스를 통해 책 제목이나 저자, ISBN만으로 손쉽게 내 책의 상세정보를 가져옵니다.</p>
+                    <h3 class="feature-title">도전 과제 & 업적 배지</h3>
+                    <p class="feature-desc">독서 권수, 집중 시간 등에 맞춘 티어별 화려한 배지 해금과 달성도 수치화 프로그래스 바, 호기심을 유발하는 히든 업적 블라인드로 성취감을 줍니다.</p>
                 </div>
             </div>
         </div>
@@ -222,37 +272,61 @@
                             <div class="showcase-phone-frame">
                                 <img src="assets/images/ios/ios_1.png" alt="iOS 홈 화면">
                             </div>
-                            <span class="screenshot-caption">기록 중심의 대시보드</span>
+                            <span class="screenshot-caption">기록 중심의 홈 대시보드</span>
                         </div>
                         <div class="carousel-item">
                             <div class="showcase-phone-frame">
                                 <img src="assets/images/ios/ios_2.png" alt="iOS 서재 화면">
                             </div>
-                            <span class="screenshot-caption">깔끔한 서재 보기</span>
+                            <span class="screenshot-caption">독서 상태별 서재 분류</span>
                         </div>
                         <div class="carousel-item">
                             <div class="showcase-phone-frame">
-                                <img src="assets/images/ios/ios_3.png" alt="iOS 통계 화면">
+                                <img src="assets/images/ios/ios_3.png" alt="iOS 도서 검색 화면">
                             </div>
-                            <span class="screenshot-caption">정밀한 독서 통계</span>
+                            <span class="screenshot-caption">ISBN 바코드 및 도서 검색</span>
                         </div>
                         <div class="carousel-item">
                             <div class="showcase-phone-frame">
-                                <img src="assets/images/ios/ios_4.png" alt="iOS 프로필 화면">
+                                <img src="assets/images/ios/ios_4.png" alt="iOS 도서 상세 화면">
                             </div>
-                            <span class="screenshot-caption">내 활동 내역</span>
+                            <span class="screenshot-caption">체계적인 독서 진행률 트래킹</span>
                         </div>
                         <div class="carousel-item">
                             <div class="showcase-phone-frame">
-                                <img src="assets/images/ios/ios_6.png" alt="iOS 상세 정보 화면">
+                                <img src="assets/images/ios/ios_5.png" alt="iOS 독서 타이머 화면">
                             </div>
-                            <span class="screenshot-caption">도서 상세 분석</span>
+                            <span class="screenshot-caption">집중을 돕는 독서 타이머</span>
                         </div>
                         <div class="carousel-item">
                             <div class="showcase-phone-frame">
-                                <img src="assets/images/ios/ios_10.png" alt="iOS 설정 화면">
+                                <img src="assets/images/ios/ios_6.png" alt="iOS 통계 화면">
                             </div>
-                            <span class="screenshot-caption">커스텀 독서 설정</span>
+                            <span class="screenshot-caption">입체적인 독서 패턴 통계</span>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="showcase-phone-frame">
+                                <img src="assets/images/ios/ios_7.png" alt="iOS 감상평 상세 화면">
+                            </div>
+                            <span class="screenshot-caption">생각 블록으로 작성하는 기록</span>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="showcase-phone-frame">
+                                <img src="assets/images/ios/ios_8.png" alt="iOS 이미지 저장 및 크롭">
+                            </div>
+                            <span class="screenshot-caption">감각적인 이미지 카드 소장</span>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="showcase-phone-frame">
+                                <img src="assets/images/ios/ios_9.png" alt="iOS 내 정보 및 AI 리포트">
+                            </div>
+                            <span class="screenshot-caption">AI가 진단하는 독서 리포트</span>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="showcase-phone-frame">
+                                <img src="assets/images/ios/ios_10.png" alt="iOS 업적 상세 화면">
+                            </div>
+                            <span class="screenshot-caption">도전 욕구를 자극하는 업적 배지</span>
                         </div>
                     </div>
 
