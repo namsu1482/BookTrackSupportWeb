@@ -557,6 +557,38 @@ p {
     box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
 }
 
+.mode-control {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 40px;
+    margin-top: -30px;
+}
+
+.mode-btn {
+    background: rgba(15, 23, 42, 0.4);
+    border: 1px solid var(--border-glass);
+    color: var(--color-text-muted);
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 13px;
+    transition: var(--transition-fast);
+}
+
+.mode-btn:hover {
+    border-color: rgba(99, 102, 241, 0.3);
+    color: var(--color-text-main);
+}
+
+.mode-btn.active {
+    background: rgba(139, 92, 246, 0.2);
+    border-color: rgba(139, 92, 246, 0.5);
+    color: #a78bfa;
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.25);
+}
+
 /* Carousel Gallery styling */
 .carousel-wrapper {
     position: relative;

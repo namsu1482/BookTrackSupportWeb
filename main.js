@@ -10,10 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Tab Control (Platform Switcher)
     initPlatformTabs();
 
-    // 3. Carousel Navigation
+    // 3. Mode Control (Standard vs Store Switcher)
+    initModeTabs();
+
+    // 4. Carousel Navigation
     initCarousel();
 
-    // 4. Scroll Reveal Animations
+    // 5. Scroll Reveal Animations
     initScrollReveal();
 });
 
@@ -35,49 +38,79 @@ function initHeroSlideshow() {
 }
 
 /**
- * Toggles showcase between iOS and Android tracks when tabs are clicked
+ * Global Gallery State
  */
 let currentPlatform = 'ios';
+let currentMode = 'store';
+
+let carouselStates = {
+    'ios-store': { index: 0 },
+    'ios-standard': { index: 0 },
+    'android-store': { index: 0 },
+    'android-standard': { index: 0 }
+};
+
+/**
+ * Toggles showcase platform when tabs are clicked
+ */
 function initPlatformTabs() {
     const tabButtons = document.querySelectorAll('.tab-btn');
-    const tracks = document.querySelectorAll('.carousel-track');
     
     tabButtons.forEach(btn => {
         btn.addEventListener('click', () => {
             const targetPlatform = btn.getAttribute('data-platform');
             if (targetPlatform === currentPlatform) return;
 
-            // Toggle active buttons
             tabButtons.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
 
-            // Toggle active track
-            tracks.forEach(track => {
-                track.classList.remove('active');
-                track.style.transform = 'translateX(0px)'; // Reset position
-            });
-
-            const targetTrack = document.getElementById(`${targetPlatform}-track`);
-            if (targetTrack) {
-                targetTrack.classList.add('active');
-            }
-
             currentPlatform = targetPlatform;
-            
-            // Reset carousel state for new track
-            resetCarouselState(targetPlatform);
+            updateGallery();
         });
     });
 }
 
 /**
+ * Toggles showcase mode (Standard / Store) when buttons are clicked
+ */
+function initModeTabs() {
+    const modeButtons = document.querySelectorAll('.mode-btn');
+    
+    modeButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const targetMode = btn.getAttribute('data-mode');
+            if (targetMode === currentMode) return;
+
+            modeButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            currentMode = targetMode;
+            updateGallery();
+        });
+    });
+}
+
+/**
+ * Updates the visible gallery track and applies active styling
+ */
+function updateGallery() {
+    const tracks = document.querySelectorAll('.carousel-track');
+    tracks.forEach(track => {
+        track.classList.remove('active');
+    });
+
+    const activeKey = `${currentPlatform}-${currentMode}`;
+    const targetTrack = document.getElementById(`${activeKey}-track`);
+    if (targetTrack) {
+        targetTrack.classList.add('active');
+    }
+
+    resetCarouselState(activeKey);
+}
+
+/**
  * Custom Responsive Screenshot Carousel Slider
  */
-let carouselStates = {
-    ios: { index: 0 },
-    android: { index: 0 }
-};
-
 function initCarousel() {
     const prevBtn = document.getElementById('carousel-prev');
     const nextBtn = document.getElementById('carousel-next');
@@ -93,28 +126,31 @@ function initCarousel() {
     });
 
     // Initialize display classes
-    updateCarouselCenterHighlight('ios');
-    updateCarouselCenterHighlight('android');
+    Object.keys(carouselStates).forEach(key => {
+        updateCarouselCenterHighlight(key);
+    });
 
     // Handle window resize to adjust sliding offsets dynamically
     let resizeTimeout;
     window.addEventListener('resize', () => {
         clearTimeout(resizeTimeout);
         resizeTimeout = setTimeout(() => {
-            resetCarouselState('ios');
-            resetCarouselState('android');
+            Object.keys(carouselStates).forEach(key => {
+                resetCarouselState(key);
+            });
         }, 150);
     });
 }
 
 function navigateCarousel(direction) {
-    const activeTrack = document.querySelector('.carousel-track.active');
+    const activeKey = `${currentPlatform}-${currentMode}`;
+    const activeTrack = document.getElementById(`${activeKey}-track`);
     if (!activeTrack) return;
 
     const items = activeTrack.querySelectorAll('.carousel-item');
     if (items.length === 0) return;
 
-    const state = carouselStates[currentPlatform];
+    const state = carouselStates[activeKey];
     const containerWidth = activeTrack.parentElement.offsetWidth;
     const itemWidth = items[0].offsetWidth;
     const gap = 24; // matches CSS gap
@@ -130,31 +166,30 @@ function navigateCarousel(direction) {
     const offset = state.index * (itemWidth + gap);
     activeTrack.style.transform = `translateX(-${offset}px)`;
 
-    updateCarouselCenterHighlight(currentPlatform);
+    updateCarouselCenterHighlight(activeKey);
 }
 
-function resetCarouselState(platform) {
-    carouselStates[platform].index = 0;
-    const track = document.getElementById(`${platform}-track`);
+function resetCarouselState(key) {
+    if (!carouselStates[key]) return;
+    carouselStates[key].index = 0;
+    const track = document.getElementById(`${key}-track`);
     if (track) {
         track.style.transform = 'translateX(0px)';
     }
-    updateCarouselCenterHighlight(platform);
+    updateCarouselCenterHighlight(key);
 }
 
 /**
  * Adds highlighted styling to center/visible items
  */
-function updateCarouselCenterHighlight(platform) {
-    const track = document.getElementById(`${platform}-track`);
+function updateCarouselCenterHighlight(key) {
+    const track = document.getElementById(`${key}-track`);
     if (!track) return;
 
     const items = track.querySelectorAll('.carousel-item');
-    const state = carouselStates[platform];
+    const state = carouselStates[key];
     
     items.forEach((item, idx) => {
-        // Highlight active items in viewport
-        // Simple heuristic: mark the item corresponding to the current state index
         if (idx === state.index) {
             item.classList.add('center-active');
         } else {
