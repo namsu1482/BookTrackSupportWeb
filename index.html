@@ -262,274 +262,93 @@
                 <p class="section-subtitle">독서에만 집중할 수 있는 깔끔한 다크 모드 기반의 프리미엄 사용자 경험을 직접 확인해 보세요.</p>
             </div>
 
-            <!-- Platform Selector Tabs -->
-            <div class="tab-control">
-                <button class="tab-btn active" data-platform="ios">iOS 스크린샷</button>
-                <button class="tab-btn" data-platform="android">Android 스크린샷</button>
-            </div>
-
-            <!-- View Mode Switcher (Standard vs Store) -->
-            <div class="mode-control">
-                <button class="mode-btn active" data-mode="store">스토어 샷</button>
-                <button class="mode-btn" data-mode="standard">일반 화면</button>
-            </div>
-
             <!-- Carousel Gallery Container -->
             <div class="carousel-wrapper">
                 <button class="carousel-nav prev" id="carousel-prev" aria-label="이전 스크린샷">❮</button>
                 
                 <div class="carousel-track-container">
-                    <!-- iOS Store Slides -->
-                    <div class="carousel-track active" id="ios-store-track">
+                    <div class="carousel-track active" id="screenshot-track">
                         <div class="carousel-item">
                             <div class="showcase-phone-frame">
-                                <img src="assets/images/ios/store/screenshot_1_home.png" alt="iOS 홈 스토어샷">
-                            </div>
-                            <span class="screenshot-caption">책과 함께하는 빛나는 오늘</span>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/ios/store/screenshot_2_search.png" alt="iOS 도서 검색 스토어샷">
-                            </div>
-                            <span class="screenshot-caption">책의 모든 정보를 한눈에</span>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/ios/store/screenshot_3_timer.png" alt="iOS 타이머 스토어샷">
-                            </div>
-                            <span class="screenshot-caption">책장에 머문 시간을 가치 있게</span>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/ios/store/screenshot_4_insights.png" alt="iOS 통계 스토어샷">
-                            </div>
-                            <span class="screenshot-caption">캘린더와 차트로 보는 나의 발자취</span>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/ios/store/screenshot_5_review_detail.png" alt="iOS 감상평 상세 스토어샷">
-                            </div>
-                            <span class="screenshot-caption">생각 블록으로 조립하는 독서 기록</span>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/ios/store/screenshot_6_review_save.png" alt="iOS 이미지 저장 스토어샷">
-                            </div>
-                            <span class="screenshot-caption">기록을 감각적인 이미지로 소장하다</span>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/ios/store/screenshot_7_social.png" alt="iOS AI 리포트 스토어샷">
-                            </div>
-                            <span class="screenshot-caption">AI가 진단하는 나의 독서 성향</span>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/ios/store/screenshot_8_achievement.png" alt="iOS 업적 스토어샷">
-                            </div>
-                            <span class="screenshot-caption">성취감을 더해주는 나만의 도전 과제</span>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/ios/store/screenshot_9_group.png" alt="iOS 그룹 스토어샷">
-                            </div>
-                            <span class="screenshot-caption">함께 읽고, 나누고, 성장하는 즐거움</span>
-                        </div>
-                    </div>
-
-                    <!-- iOS Standard Slides -->
-                    <div class="carousel-track" id="ios-standard-track">
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/ios/home.png" alt="iOS 홈 화면">
+                                <img src="assets/images/android/home.jpeg" alt="홈 화면">
                             </div>
                             <span class="screenshot-caption">기록 중심 홈 대시보드</span>
                         </div>
                         <div class="carousel-item">
                             <div class="showcase-phone-frame">
-                                <img src="assets/images/ios/library.png" alt="iOS 내 서재 화면">
+                                <img src="assets/images/android/library.jpeg" alt="내 서재 등록책">
                             </div>
                             <span class="screenshot-caption">분류별 스마트 서재</span>
                         </div>
                         <div class="carousel-item">
                             <div class="showcase-phone-frame">
-                                <img src="assets/images/ios/search.png" alt="iOS 도서 검색">
-                            </div>
-                            <span class="screenshot-caption">바코드 스캔 & 탐색</span>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/ios/detail.png" alt="iOS 도서 상세">
-                            </div>
-                            <span class="screenshot-caption">도서 상세 & 트래킹</span>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/ios/timer.png" alt="iOS 독서 타이머">
-                            </div>
-                            <span class="screenshot-caption">집중 독서 타이머</span>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/ios/stats.png" alt="iOS 독서 통계">
-                            </div>
-                            <span class="screenshot-caption">입체적인 독서 통계</span>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/ios/review_detail.png" alt="iOS 감상평 상세">
-                            </div>
-                            <span class="screenshot-caption">생각 블록 감상평</span>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/ios/profile.png" alt="iOS 내 정보">
-                            </div>
-                            <span class="screenshot-caption">Gemini AI 독서 리포트</span>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/ios/achievements.png" alt="iOS 업적 화면">
-                            </div>
-                            <span class="screenshot-caption">도전 과제 & 업적 배지</span>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/ios/group.png" alt="iOS 독서 그룹">
-                            </div>
-                            <span class="screenshot-caption">실시간 소셜 독서 그룹</span>
-                        </div>
-                    </div>
-
-                    <!-- Android Store Slides -->
-                    <div class="carousel-track" id="android-store-track">
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/android/store/screenshot_1_home.png" alt="Android 홈 스토어샷">
-                            </div>
-                            <span class="screenshot-caption">책과 함께하는 빛나는 오늘</span>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/android/store/screenshot_2_search.png" alt="Android 도서 검색 스토어샷">
-                            </div>
-                            <span class="screenshot-caption">책의 모든 정보를 한눈에</span>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/android/store/screenshot_3_timer.png" alt="Android 타이머 스토어샷">
-                            </div>
-                            <span class="screenshot-caption">책장에 머문 시간을 가치 있게</span>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/android/store/screenshot_4_insights.png" alt="Android 통계 스토어샷">
-                            </div>
-                            <span class="screenshot-caption">캘린더와 차트로 보는 나의 발자취</span>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/android/store/screenshot_5_review_detail.png" alt="Android 감상평 상세 스토어샷">
-                            </div>
-                            <span class="screenshot-caption">생각 블록으로 조립하는 독서 기록</span>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/android/store/screenshot_6_review_save.png" alt="Android 이미지 저장 스토어샷">
-                            </div>
-                            <span class="screenshot-caption">기록을 감각적인 이미지로 소장하다</span>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/android/store/screenshot_7_social.png" alt="Android AI 리포트 스토어샷">
-                            </div>
-                            <span class="screenshot-caption">AI가 진단하는 나의 독서 성향</span>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/android/store/screenshot_8_achievement.png" alt="Android 업적 스토어샷">
-                            </div>
-                            <span class="screenshot-caption">성취감을 더해주는 나만의 도전 과제</span>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/android/store/screenshot_9_group.png" alt="Android 그룹 스토어샷">
-                            </div>
-                            <span class="screenshot-caption">함께 읽고, 나누고, 성장하는 즐거움</span>
-                        </div>
-                    </div>
-
-                    <!-- Android Standard Slides -->
-                    <div class="carousel-track" id="android-standard-track">
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/android/home.jpeg" alt="Android 홈 화면">
-                            </div>
-                            <span class="screenshot-caption">기록 중심 홈 대시보드</span>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/android/library.jpeg" alt="Android 내 서재 등록책">
-                            </div>
-                            <span class="screenshot-caption">분류별 스마트 서재</span>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="showcase-phone-frame">
-                                <img src="assets/images/android/library_reviews.jpeg" alt="Android 내 서재 감상평">
+                                <img src="assets/images/android/library_reviews.jpeg" alt="내 서재 감상평">
                             </div>
                             <span class="screenshot-caption">작성한 감상평 히스토리</span>
                         </div>
                         <div class="carousel-item">
                             <div class="showcase-phone-frame">
-                                <img src="assets/images/android/search.jpeg" alt="Android 도서 검색">
+                                <img src="assets/images/android/search.jpeg" alt="도서 검색">
                             </div>
                             <span class="screenshot-caption">바코드 스캔 & 탐색</span>
                         </div>
                         <div class="carousel-item">
                             <div class="showcase-phone-frame">
-                                <img src="assets/images/android/detail.jpeg" alt="Android 도서 상세">
+                                <img src="assets/images/android/detail.jpeg" alt="도서 상세">
                             </div>
                             <span class="screenshot-caption">도서 상세 & 트래킹</span>
                         </div>
                         <div class="carousel-item">
                             <div class="showcase-phone-frame">
-                                <img src="assets/images/android/timer.jpeg" alt="Android 독서 타이머">
+                                <img src="assets/images/android/timer.jpeg" alt="독서 타이머">
                             </div>
                             <span class="screenshot-caption">집중 독서 타이머</span>
                         </div>
                         <div class="carousel-item">
                             <div class="showcase-phone-frame">
-                                <img src="assets/images/android/stats.jpeg" alt="Android 독서 통계">
+                                <img src="assets/images/android/stats.jpeg" alt="독서 통계">
                             </div>
                             <span class="screenshot-caption">입체적인 독서 통계</span>
                         </div>
                         <div class="carousel-item">
                             <div class="showcase-phone-frame">
-                                <img src="assets/images/android/review_detail.jpeg" alt="Android 감상평 상세">
+                                <img src="assets/images/android/review_write.jpeg" alt="감상평 작성">
                             </div>
-                            <span class="screenshot-caption">생각 블록 감상평</span>
+                            <span class="screenshot-caption">편리한 감상평 작성</span>
                         </div>
                         <div class="carousel-item">
                             <div class="showcase-phone-frame">
-                                <img src="assets/images/android/review_save.jpeg" alt="Android 이미지 저장 및 크롭">
+                                <img src="assets/images/android/review_detail.jpeg" alt="감상평 상세">
+                            </div>
+                            <span class="screenshot-caption">생각 블록 감상평 상세</span>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="showcase-phone-frame">
+                                <img src="assets/images/android/review_view.jpeg" alt="감상평 뷰어">
+                            </div>
+                            <span class="screenshot-caption">가독성 높은 리뷰 뷰어</span>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="showcase-phone-frame">
+                                <img src="assets/images/android/review_save.jpeg" alt="이미지 저장 및 크롭">
                             </div>
                             <span class="screenshot-caption">감각적인 이미지 저장</span>
                         </div>
                         <div class="carousel-item">
                             <div class="showcase-phone-frame">
-                                <img src="assets/images/android/profile.jpeg" alt="Android 내 정보">
+                                <img src="assets/images/android/profile.jpeg" alt="내 정보">
                             </div>
                             <span class="screenshot-caption">Gemini AI 독서 리포트</span>
                         </div>
                         <div class="carousel-item">
                             <div class="showcase-phone-frame">
-                                <img src="assets/images/android/achievements.jpeg" alt="Android 업적 화면">
+                                <img src="assets/images/android/achievements.jpeg" alt="업적 화면">
                             </div>
                             <span class="screenshot-caption">도전 과제 & 업적 배지</span>
                         </div>
                         <div class="carousel-item">
                             <div class="showcase-phone-frame">
-                                <img src="assets/images/android/group.jpeg" alt="Android 독서 그룹">
+                                <img src="assets/images/android/group.jpeg" alt="독서 그룹">
                             </div>
                             <span class="screenshot-caption">실시간 소셜 독서 그룹</span>
                         </div>

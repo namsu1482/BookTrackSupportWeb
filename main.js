@@ -7,16 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. Hero Slideshow Autoplay
     initHeroSlideshow();
 
-    // 2. Tab Control (Platform Switcher)
-    initPlatformTabs();
-
-    // 3. Mode Control (Standard vs Store Switcher)
-    initModeTabs();
-
-    // 4. Carousel Navigation
+    // 2. Carousel Navigation
     initCarousel();
 
-    // 5. Scroll Reveal Animations
+    // 3. Scroll Reveal Animations
     initScrollReveal();
 });
 
@@ -40,73 +34,9 @@ function initHeroSlideshow() {
 /**
  * Global Gallery State
  */
-let currentPlatform = 'ios';
-let currentMode = 'store';
-
 let carouselStates = {
-    'ios-store': { index: 0 },
-    'ios-standard': { index: 0 },
-    'android-store': { index: 0 },
-    'android-standard': { index: 0 }
+    'screenshot': { index: 0 }
 };
-
-/**
- * Toggles showcase platform when tabs are clicked
- */
-function initPlatformTabs() {
-    const tabButtons = document.querySelectorAll('.tab-btn');
-    
-    tabButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const targetPlatform = btn.getAttribute('data-platform');
-            if (targetPlatform === currentPlatform) return;
-
-            tabButtons.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-
-            currentPlatform = targetPlatform;
-            updateGallery();
-        });
-    });
-}
-
-/**
- * Toggles showcase mode (Standard / Store) when buttons are clicked
- */
-function initModeTabs() {
-    const modeButtons = document.querySelectorAll('.mode-btn');
-    
-    modeButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const targetMode = btn.getAttribute('data-mode');
-            if (targetMode === currentMode) return;
-
-            modeButtons.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-
-            currentMode = targetMode;
-            updateGallery();
-        });
-    });
-}
-
-/**
- * Updates the visible gallery track and applies active styling
- */
-function updateGallery() {
-    const tracks = document.querySelectorAll('.carousel-track');
-    tracks.forEach(track => {
-        track.classList.remove('active');
-    });
-
-    const activeKey = `${currentPlatform}-${currentMode}`;
-    const targetTrack = document.getElementById(`${activeKey}-track`);
-    if (targetTrack) {
-        targetTrack.classList.add('active');
-    }
-
-    resetCarouselState(activeKey);
-}
 
 /**
  * Custom Responsive Screenshot Carousel Slider
@@ -143,7 +73,7 @@ function initCarousel() {
 }
 
 function navigateCarousel(direction) {
-    const activeKey = `${currentPlatform}-${currentMode}`;
+    const activeKey = 'screenshot';
     const activeTrack = document.getElementById(`${activeKey}-track`);
     if (!activeTrack) return;
 

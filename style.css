@@ -629,7 +629,7 @@ p {
 }
 
 /* 일반 화면 스크린샷 트랙에 베젤 패딩을 부여하여 하단 내비게이션 바 및 라운드 코너 잘림 해결 */
-.carousel-track[id$="-standard-track"] .showcase-phone-frame {
+.carousel-track[id="screenshot-track"] .showcase-phone-frame {
     padding: 8px 6px 12px 6px;
     display: flex;
     flex-direction: column;
@@ -645,28 +645,8 @@ p {
 }
 
 /* 스크린샷 호버 시 긴 이미지가 디바이스 목업 프레임 안에서 자동으로 스크롤 다운되는 인터랙션 효과 (일반 화면 전용, 패딩 보정 반영) */
-.carousel-track[id$="-standard-track"] .carousel-item:hover .showcase-phone-frame img {
+.carousel-track[id="screenshot-track"] .carousel-item:hover .showcase-phone-frame img {
     transform: translateY(calc(-100% + var(--showcase-h-std) - 32px));
-}
-
-/* 스토어 스크린샷 전용 레이아웃: 기기 테두리(보더) 없이 플랫하게 표시하여 전체 텍스트 및 레이아웃 노출 */
-.carousel-track[id$="-store-track"] .showcase-phone-frame {
-    border: none;
-    background: transparent;
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
-    border-radius: 14px;
-    padding: 0; /* 스토어샷은 패딩 없음 */
-}
-
-.carousel-track[id$="-store-track"] .showcase-phone-frame img {
-    height: 100%;
-    object-fit: cover;
-    transform: none !important;
-}
-
-/* 안드로이드 스토어 스크린샷은 9:16 비율이므로 전용 높이로 최적화 */
-#android-store-track .showcase-phone-frame {
-    height: var(--showcase-h-android-store);
 }
 
 .screenshot-caption {
