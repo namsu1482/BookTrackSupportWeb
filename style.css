@@ -580,7 +580,7 @@ p {
     margin: 0 auto;
     padding: 0 50px;
     --showcase-w: 220px;
-    --showcase-h-std: calc((var(--showcase-w) - 12px) * 2095 / 1080 + 20px);
+    --showcase-h-std: calc((var(--showcase-w) - 24px) * 2095 / 1080 + 32px);
 }
 
 .carousel-track-container {
@@ -644,7 +644,7 @@ p {
 
 /* 스크린샷 호버 시 긴 이미지가 디바이스 목업 프레임 안에서 자동으로 스크롤 다운되는 인터랙션 효과 (일반 화면 전용, 패딩 보정 반영) */
 .carousel-track[id="screenshot-track"] .carousel-item:hover .showcase-phone-frame img {
-    transform: translateY(calc(var(--showcase-h-std) - 20px - 100%));
+    transform: translateY(calc(var(--showcase-h-std) - 32px - 100%));
 }
 
 .screenshot-caption {
