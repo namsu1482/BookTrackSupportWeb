@@ -1,6 +1,6 @@
 /* ==========================================
    BookTrack Support Web - Interactive Logic
-   Deep Violet Theme & Dynamic Showcase
+   Light Theme & Store Showcase
    ========================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -72,101 +72,86 @@ function initHeroSlideshow() {
 }
 
 /**
- * 3. Showcase Data & Interactive Carousel Gallery
+ * 3. Showcase Data (storeData Images) & Interactive Carousel Gallery
  */
 const GALLERY_DATA = {
     android: [
         {
-            img: 'assets/images/android/store/screenshot_1_home.png',
+            img: 'assets/images/storeData/android/store_android_1.png',
             title: '책과 함께하는 빛나는 오늘',
             desc: '체계적인 독서 목표와 격려 메시지'
         },
         {
-            img: 'assets/images/android/store/screenshot_2_search.png',
+            img: 'assets/images/storeData/android/store_android_2.png',
             title: '책의 모든 정보를 한눈에',
             desc: '메타데이터와 구매 연동 및 진척도'
         },
         {
-            img: 'assets/images/android/store/screenshot_3_timer.png',
+            img: 'assets/images/storeData/android/store_android_3.png',
             title: '책장에 머문 시간을 가치 있게',
             desc: '정밀한 독서 타이머와 진척도 계산'
         },
         {
-            img: 'assets/images/android/store/screenshot_4_insights.png',
+            img: 'assets/images/storeData/android/store_android_4.png',
             title: '캘린더와 차트로 보는 발자취',
             desc: '월간 도넛 차트와 일간 꺾은선 통계'
         },
         {
-            img: 'assets/images/android/store/screenshot_5_review_detail.png',
+            img: 'assets/images/storeData/android/store_android_5.png',
             title: '생각 블록으로 조립하는 기록',
             desc: '인상 깊은 구절과 맞춤형 생각 카드'
         },
         {
-            img: 'assets/images/android/store/screenshot_6_review_save.png',
+            img: 'assets/images/storeData/android/store_android_6.png',
             title: '기록을 감각적인 이미지로 소장',
             desc: '고해상도 템플릿과 SNS 감성 카드'
         },
         {
-            img: 'assets/images/android/store/screenshot_7_social.png',
+            img: 'assets/images/storeData/android/store_android_7.png',
             title: 'AI가 진단하는 나의 독서 성향',
             desc: '독서 페르소나 및 서재 맞춤형 리포트'
         },
         {
-            img: 'assets/images/android/store/screenshot_8_achievement.png',
+            img: 'assets/images/storeData/android/store_android_8.png',
             title: '성취감을 더하는 도전 과제',
             desc: '등급별 화려한 배지와 히든 업적'
-        },
-        {
-            img: 'assets/images/android/store/screenshot_9_group.png',
-            title: '함께 읽고 나누는 즐거움',
-            desc: '실시간 랭킹 리더보드와 소셜 모임'
         }
     ],
     ios: [
         {
-            img: 'assets/images/ios/store/screenshot_1_home.png',
+            img: 'assets/images/storeData/ios/store_ios_1.png',
             title: '책과 함께하는 빛나는 오늘',
             desc: '체계적인 독서 목표와 격려 메시지'
         },
         {
-            img: 'assets/images/ios/store/screenshot_2_search.png',
+            img: 'assets/images/storeData/ios/store_ios_2.png',
             title: '책의 모든 정보를 한눈에',
             desc: '메타데이터와 구매 연동 및 진척도'
         },
         {
-            img: 'assets/images/ios/store/screenshot_3_timer.png',
+            img: 'assets/images/storeData/ios/store_ios_3.png',
             title: '책장에 머문 시간을 가치 있게',
             desc: '정밀한 독서 타이머와 진척도 계산'
         },
         {
-            img: 'assets/images/ios/store/screenshot_4_insights.png',
+            img: 'assets/images/storeData/ios/store_ios_4.png',
             title: '캘린더와 차트로 보는 발자취',
             desc: '월간 도넛 차트와 일간 꺾은선 통계'
         },
         {
-            img: 'assets/images/ios/store/screenshot_5_review_detail.png',
+            img: 'assets/images/storeData/ios/store_ios_5.png',
             title: '생각 블록으로 조립하는 기록',
             desc: '인상 깊은 구절과 맞춤형 생각 카드'
         },
         {
-            img: 'assets/images/ios/store/screenshot_6_review_save.png',
+            img: 'assets/images/storeData/ios/store_ios_6.png',
             title: '차곡차곡 모아보는 나만의 감상평',
             desc: '서재의 감상평 목록에서 한눈에 확인'
         },
         {
-            img: 'assets/images/ios/store/screenshot_7_social.png',
+            img: 'assets/images/storeData/ios/store_ios_7.png',
             title: 'AI가 진단하는 나의 독서 성향',
             desc: '독서 페르소나 및 서재 맞춤형 리포트'
-        },
-        {
-            img: 'assets/images/ios/store/screenshot_8_achievement.png',
-            title: '성취감을 더해주는 나만의 도전 과제',
-            desc: '등급별 화려한 배지와 히든 업적'
-        },
-        {
-            img: 'assets/images/ios/store/screenshot_9_group.png',
-            title: '함께 읽고 나누는 즐거움',
-            desc: '실시간 랭킹 리더보드와 소셜 모임'
         }
     ]
 };
@@ -235,7 +220,7 @@ function renderCarouselItems() {
 
     const data = GALLERY_DATA[currentPlatform];
 
-    // Render Cards
+    // Render Cards with storeData Showcase Mockups
     track.innerHTML = data.map((item, idx) => `
         <div class="gallery-card ${idx === currentSlideIndex ? 'center-active' : ''}">
             <div class="gallery-mockup">
