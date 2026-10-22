@@ -125,7 +125,7 @@ const TRANSLATIONS = {
         spotlight_sec_subtitle: "최신 On-Device AI와 클라우드 인텔리전스가 결합된 차세대 독서 경험을 만나보세요.",
         
         spotlight_1_tag: "AI INTELLIGENCE",
-        spotlight_1_title: "나만의 독서 성향을 진단하는<br><span class=\"gradient-text\">Gemini AI 독서 리포트</span>",
+        spotlight_1_title: "<span class=\"gradient-text\">독서 리포트</span>",
         spotlight_1_lead: "서재 데이터와 감상평 필체를 심층 분석하여 Gemini AI가 독서 페르소나 키워드와 맞춤 인사이트를 발행합니다.",
         spotlight_1_p1_h: "독서 페르소나 도출",
         spotlight_1_p1_p: "단순 장르 구분을 넘어 지적 탐구형, 감성 몰입형 등 나의 독서 스타일을 정밀하게 규정합니다.",
@@ -133,28 +133,20 @@ const TRANSLATIONS = {
         spotlight_1_p2_p: "현재 서재의 통계적 빈틈을 메워주는 맞춤 도서를 높은 정확도로 제안합니다.",
         
         spotlight_2_tag: "THEME & DRAG-AND-DROP",
-        spotlight_2_title: "감각적인 조색과 드래그 앤 드롭<br><span class=\"gradient-text\">감상평 카드 테마 스튜디오</span>",
+        spotlight_2_title: "<span class=\"gradient-text\">나만의 맞춤 카드 테마 스튜디오</span>",
         spotlight_2_lead: "12가지 세부 요소 커스텀 조색과 롱클릭 드래그 앤 드롭으로 카드의 구성 요소를 자유롭게 재배치하고 나만의 테마로 소장하세요.",
         spotlight_2_p1_h: "12가지 디테일 조색 & 종이 질감",
         spotlight_2_p1_p: "배경 그라데이션부터 활자 종이 질감 오버레이, 4종 타이포그래피까지 정밀하게 커스텀합니다.",
         spotlight_2_p2_h: "자석 스냅 햅틱 드래그 & 토글",
         spotlight_2_p2_p: "표지, 별점, 인용구, 본문 순서를 드래그하여 바꾸고 원하는 블록만 켜고 끌 수 있습니다.",
         
-        spotlight_3_tag: "DIARY & ALL-IN-ONE DASHBOARD",
-        spotlight_3_title: "독서 캘린더와 다이어리를 한곳에<br><span class=\"gradient-text\">통합 독서 기록 대시보드</span>",
-        spotlight_3_lead: "캘린더, 일일 다이어리, 감상평을 한눈에 모아보는 '전체' 탭과 12종 감성 폰트 다이어리로 하루의 생각을 온전히 간직하세요.",
-        spotlight_3_p1_h: "한눈에 보는 통합 '전체' 탭",
-        spotlight_3_p1_p: "출석 캘린더, 최근 다이어리와 감상평 카드, 일일 요약 통계를 대시보드에서 즉시 확인합니다.",
-        spotlight_3_p2_h: "나의 기록 스타일 페르소나",
-        spotlight_3_p2_p: "기록 빈도와 패턴을 분석하여 귀여운 캐릭터 페르소나와 감성 분석 결과를 제공합니다.",
-        
-        spotlight_4_tag: "REVIEW CARD & EXPORT",
-        spotlight_4_title: "소중한 독서 기록을<br><span class=\"gradient-text\">SNS 맞춤 비율 이미지로 소장</span>",
-        spotlight_4_lead: "작성한 생각 블록과 인상 깊은 구절을 1:1, 4:5, 9:16 등 SNS에 최적화된 무손실 고화질 카드로 저장하고 원클릭 공유하세요.",
-        spotlight_4_p1_h: "1:1, 4:5, 9:16 멀티 비율 프리뷰",
-        spotlight_4_p1_p: "인스타그램 피드부터 스토리, 릴스까지 원하는 포맷으로 미세 조절하여 깔끔하게 크롭합니다.",
-        spotlight_4_p2_h: "무손실 고해상도 갤러리 저장 & 공유",
-        spotlight_4_p2_p: "투톤 그라데이션과 감성 태그가 담긴 프리미엄 리뷰 카드를 갤러리에 저장하고 바로 공유하세요.",
+        spotlight_3_tag: "READING LOG & DIARY",
+        spotlight_3_title: "<span class=\"gradient-text\">독서 기록 작성</span>",
+        spotlight_3_lead: "책을 읽고 떠오른 생각과 일기를 다이어리로 기록하고, 사진 첨부와 12종 감성 폰트로 소중한 하루의 독서를 온전히 간직하세요.",
+        spotlight_3_p1_h: "일일 독서 다이어리 & 사진 첨부",
+        spotlight_3_p1_p: "책을 읽은 후의 단상과 일기를 자유롭게 적고, 본문 사진 첨부와 감성 배경으로 나만의 페이지를 만듭니다.",
+        spotlight_3_p2_h: "12종 감성 폰트 & 맞춤 서식",
+        spotlight_3_p2_p: "취향에 맞는 감성 폰트와 글자 크기, 색상을 커스텀하고 캘린더 대시보드에서 작성한 기록을 한눈에 모아보세요.",
         
         // Gallery Showcase Section
         gallery_sec_tag: "APP SHOWCASE",
@@ -299,7 +291,7 @@ const TRANSLATIONS = {
         spotlight_sec_subtitle: "Experience next-generation reading blending on-device AI with cloud intelligence.",
         
         spotlight_1_tag: "AI INTELLIGENCE",
-        spotlight_1_title: "Diagnose Your Reading Persona with<br><span class=\"gradient-text\">Gemini AI Reading Reports</span>",
+        spotlight_1_title: "<span class=\"gradient-text\">Reading Report</span>",
         spotlight_1_lead: "Combining your thought blocks and library data, Gemini AI generates custom reader persona keywords and writing analysis reports.",
         spotlight_1_p1_h: "Reader Persona Profiling",
         spotlight_1_p1_p: "Goes beyond simple genres to define your unique style—such as Intellectual Explorer or Emotional Immerser.",
@@ -307,28 +299,20 @@ const TRANSLATIONS = {
         spotlight_1_p2_p: "Suggests highly relevant books to expand your reading horizons based on library statistics.",
         
         spotlight_2_tag: "THEME & DRAG-AND-DROP",
-        spotlight_2_title: "Custom Palette & Tactile Drag-and-Drop<br><span class=\"gradient-text\">Card Theme Studio</span>",
+        spotlight_2_title: "<span class=\"gradient-text\">Custom Card Theme Studio</span>",
         spotlight_2_lead: "Color 12 card elements individually, overlay tactile paper textures, and rearrange blocks with magnetic drag-and-drop.",
         spotlight_2_p1_h: "12-Detail Coloring & Paper Texture",
         spotlight_2_p1_p: "Fine-tune background gradients, authentic paper texture overlays, and 4 typography presets.",
         spotlight_2_p2_h: "Haptic Snap Reorder & Block Toggles",
         spotlight_2_p2_p: "Drag cover, rating, quote, and notes into any sequence and toggle visibility for individual blocks.",
         
-        spotlight_3_tag: "DIARY & ALL-IN-ONE DASHBOARD",
-        spotlight_3_title: "Calendar and Journal in One Place<br><span class=\"gradient-text\">Unified Record Dashboard</span>",
-        spotlight_3_lead: "Browse the 'All' tab combining reading calendar, recent diaries, and reviews, plus 12-font daily diaries to preserve your thoughts.",
-        spotlight_3_p1_h: "All-in-One Dashboard Tab",
-        spotlight_3_p1_p: "Check attendance calendar, recent diaries, review cards, and cumulative statistics at a single glance.",
-        spotlight_3_p2_h: "My Writing Style Persona",
-        spotlight_3_p2_p: "Analyzes recording frequency and style to reveal your unique character persona and reflection habits.",
-        
-        spotlight_4_tag: "REVIEW CARD & EXPORT",
-        spotlight_4_title: "Preserve Your Reading Memories as<br><span class=\"gradient-text\">Multi-Ratio Social Cards</span>",
-        spotlight_4_lead: "Export your reflections and favorite quotes into high-resolution cards optimized for Instagram feed (1:1, 4:5) and stories (9:16) with one tap.",
-        spotlight_4_p1_h: "1:1, 4:5, 9:16 Multi-Ratio Presets",
-        spotlight_4_p1_p: "Fine-tune and crop into 1:1 square feeds, 4:5 portraits, and 9:16 stories with crisp layout guides.",
-        spotlight_4_p2_h: "Lossless Gallery Save & Direct Sharing",
-        spotlight_4_p2_p: "Save premium review cards with gradient palettes and mood tags directly to your gallery or share instantly.",
+        spotlight_3_tag: "READING LOG & DIARY",
+        spotlight_3_title: "<span class=\"gradient-text\">Reading Log & Diary</span>",
+        spotlight_3_lead: "Record thoughts and daily reflections in your personal reading diary, complete with photo attachments and 12 curated aesthetic fonts.",
+        spotlight_3_p1_h: "Daily Reading Diary & Photos",
+        spotlight_3_p1_p: "Freely journal your thoughts and reflections after reading, adding excerpt photos and aesthetic background covers.",
+        spotlight_3_p2_h: "12 Aesthetic Fonts & Custom Styling",
+        spotlight_3_p2_p: "Customize fonts, text size, and colors to your taste, and revisit all your recorded moments directly from the calendar dashboard.",
         
         // Gallery Showcase Section
         gallery_sec_tag: "APP SHOWCASE",
@@ -385,14 +369,12 @@ const SPOTLIGHT_IMAGES = {
     ko: {
         img1: 'assets/images/android/hero_ai_report.jpeg',
         img2: 'assets/images/android/spotlight_card_custom.jpeg',
-        img3: 'assets/images/android/spotlight_dashboard.png',
-        img4: 'assets/images/android/hero_review_save.jpeg'
+        img3: 'assets/images/android/spotlight_diary.png'
     },
     en: {
         img1: 'assets/images/android/hero_ai_report_en.jpeg',
         img2: 'assets/images/android/spotlight_card_custom.jpeg',
-        img3: 'assets/images/android/spotlight_dashboard_en.png',
-        img4: 'assets/images/android/hero_review_save_en.jpeg'
+        img3: 'assets/images/android/spotlight_diary_en.png'
     }
 };
 
@@ -714,7 +696,6 @@ function applyLanguage(lang) {
     const spotlightImg1 = document.getElementById('spotlight-img-1');
     const spotlightImg2 = document.getElementById('spotlight-img-2');
     const spotlightImg3 = document.getElementById('spotlight-img-3');
-    const spotlightImg4 = document.getElementById('spotlight-img-4');
     const spotlightConfig = SPOTLIGHT_IMAGES[lang] || SPOTLIGHT_IMAGES.ko;
     if (spotlightImg1 && spotlightConfig.img1) {
         spotlightImg1.src = spotlightConfig.img1;
@@ -724,9 +705,6 @@ function applyLanguage(lang) {
     }
     if (spotlightImg3 && spotlightConfig.img3) {
         spotlightImg3.src = spotlightConfig.img3;
-    }
-    if (spotlightImg4 && spotlightConfig.img4) {
-        spotlightImg4.src = spotlightConfig.img4;
     }
 
     // Re-render Showcase Gallery
