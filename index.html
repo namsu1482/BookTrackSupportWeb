@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="meta-title">북트랙 (BookTrack) - 나만의 완벽한 독서 여정, AI와 함께 더 스마트하게</title>
-    <meta name="description" id="meta-desc" content="독서 기록, 타이머 측정, 감상평 카드 제작부터 AI 맞춤 도서 추천과 소셜 독서 모임까지 제공하는 올인원 스마트 독서 관리 앱 북트랙(BookTrack).">
-    <meta name="keywords" content="북트랙, BookTrack, 독서기록, 독서 타이머, 서재 관리, AI 도서 추천, AI 독서카드, 독서 모임, 독서 통계, 감상평 기록">
+    <title id="meta-title">북트랙 (BookTrack) - 나만의 완벽한 독서 여정, 책을 기록하고 나를 알아가는 스마트 독서 관리 앱</title>
+    <meta name="description" id="meta-desc" content="책을 읽는 시간부터 기록하고, 나만의 독서 성향을 발견하는 순간까지. 원목 책장 뷰, 독서 타이머, 24시간 독서 페르소나, OCR 감상평 카드 커스텀, 월간 리포트까지 함께하는 스마트 독서 관리 앱 북트랙(BookTrack).">
+    <meta name="keywords" content="북트랙, BookTrack, 독서기록, 독서 타이머, 원목 책장, 독서 페르소나, 24시간 독서 성향, 바코드 스캔, OCR 문장 인식, 감상평 카드, 독서 다이어리, 월간 리포트, 도서 추천">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" id="og-title" content="북트랙 (BookTrack) - 나만의 완벽한 독서 여정, AI와 함께">
-    <meta property="og:description" id="og-desc" content="독서 기록, 타이머 측정, 감상평 카드 제작부터 AI 맞춤 도서 추천과 소셜 독서 모임까지. 올인원 독서 관리 애플리케이션 북트랙.">
+    <meta property="og:title" id="og-title" content="북트랙 (BookTrack) - 나만의 완벽한 독서 여정">
+    <meta property="og:description" id="og-desc" content="책을 읽는 시간부터 기록하고, 나만의 독서 성향을 발견하는 순간까지 독서의 모든 과정을 함께합니다.">
     <meta property="og:image" content="assets/logo.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" id="tw-title" content="북트랙 (BookTrack) - 나만의 완벽한 독서 여정, AI와 함께">
-    <meta property="twitter:description" id="tw-desc" content="독서 기록, 타이머 측정, 감상평 카드 제작부터 AI 맞춤 도서 추천과 소셜 독서 모임까지. 올인원 독서 관리 애플리케이션 북트랙.">
+    <meta property="twitter:title" id="tw-title" content="북트랙 (BookTrack) - 나만의 완벽한 독서 여정">
+    <meta property="twitter:description" id="tw-desc" content="책을 읽는 시간부터 기록하고, 나만의 독서 성향을 발견하는 순간까지 독서의 모든 과정을 함께합니다.">
     <meta property="twitter:image" content="assets/logo.png">
 
     <!-- Favicon -->
@@ -25,7 +25,7 @@
     <!-- Google Fonts (Outfit & Noto Sans KR) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
     
     <!-- Cache Control -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -33,7 +33,7 @@
     <meta http-equiv="Expires" content="0">
 
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="style.css?v=20261022_2">
+    <link rel="stylesheet" href="style.css?v=20261106_1">
 </head>
 <body>
     <!-- Ambient Subtle Glow Orbs -->
@@ -52,10 +52,13 @@
                 </div>
             </a>
             <nav class="nav-links">
-                <a href="#features" class="nav-link" data-i18n="nav_features">12대 특장점</a>
-                <a href="#showcase-deepdive" class="nav-link" data-i18n="nav_spotlight">심층 기능</a>
-                <a href="#gallery" class="nav-link" data-i18n="nav_showcase">스크린샷</a>
-                <a href="#download" class="nav-link" data-i18n="nav_download">다운로드</a>
+                <a href="#sec-library" class="nav-link" data-i18n="nav_library">내 서재 & 타이머</a>
+                <a href="#sec-persona" class="nav-link" data-i18n="nav_persona">독서 성향 & 페르소나</a>
+                <a href="#sec-records" class="nav-link" data-i18n="nav_records">기록 & 캐릭터</a>
+                <a href="#sec-recommend" class="nav-link" data-i18n="nav_recommend">맞춤 도서 추천</a>
+                <a href="#sec-diary-cards" class="nav-link" data-i18n="nav_cards">다이어리 & 카드</a>
+                <a href="#sec-monthly-report" class="nav-link" data-i18n="nav_report">월간 리포트</a>
+                <a href="#gallery" class="nav-link" data-i18n="nav_showcase">쇼케이스</a>
             </nav>
             <div class="header-actions">
                 <!-- Language Switcher Pill Toggle -->
@@ -75,22 +78,23 @@
                 <div class="hero-content">
                     <div class="hero-badge-pill reveal">
                         <span class="pulse-dot"></span>
-                        <span data-i18n="hero_badge">스마트 Gemini AI 탑재 & 올인원 독서 관리 플랫폼</span>
+                        <span data-i18n="hero_badge">나만의 스마트 독서 비서 북트랙 BookTrack</span>
                     </div>
                     
                     <h1 class="hero-title reveal" data-i18n-html="hero_title">
                         나만의 완벽한 독서 여정,<br>
-                        <span class="gradient-text">AI와 함께 더 스마트하게 읽다</span>
+                        <span class="gradient-text">책을 기록하고 나를 알아가다</span>
                     </h1>
                     
                     <p class="hero-description reveal" data-i18n="hero_desc">
-                        BookTrack은 독서 기록, 타이머 측정, 감상평 카드 커스텀 제작부터 Gemini AI 맞춤 도서 추천과 소셜 독서 모임까지 제공하는 올인원 크로스 플랫폼(CMP) 독서 관리 애플리케이션입니다.
+                        책을 읽는 시간부터 기록하고, 나만의 독서 성향을 발견하는 순간까지 독서의 모든 과정을 함께합니다. 원목 책장, 정밀 타이머, 독서 페르소나, OCR 카드 조색, 월간 인포그래픽 리포트를 지금 경험해 보세요.
                     </p>
 
+                    <!-- Unified Store Badges (No OS Separation) -->
                     <div class="hero-actions reveal">
                         <div class="store-badges">
-                            <a href="https://apps.apple.com/us/app/%EB%B6%81%ED%8A%B8%EB%9E%99/id6773334377" target="_blank" rel="noopener noreferrer" class="store-badge" id="hero-btn-ios">
-                                <svg viewBox="0 0 24 24">
+                            <a href="https://apps.apple.com/us/app/%EB%B6%81%ED%8A%B8%EB%9E%99/id6773334377" target="_blank" rel="noopener noreferrer" class="store-badge" id="hero-btn-ios" aria-label="Apple App Store">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
                                     <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z"/>
                                 </svg>
                                 <div class="store-badge-text">
@@ -98,8 +102,8 @@
                                     <span class="store-badge-title">App Store</span>
                                 </div>
                             </a>
-                            <a href="https://play.google.com/store/apps/details?id=com.cns.booktrack" target="_blank" rel="noopener noreferrer" class="store-badge" id="hero-btn-android">
-                                <svg viewBox="0 0 24 24">
+                            <a href="https://play.google.com/store/apps/details?id=com.cns.booktrack" target="_blank" rel="noopener noreferrer" class="store-badge" id="hero-btn-android" aria-label="Google Play Store">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
                                     <path d="M3 5.27v13.46c0 .82.68 1.45 1.5 1.45.24 0 .47-.06.69-.18l12-7.05-12-7.06c-.22-.12-.45-.18-.69-.18-.82 0-1.5.63-1.5 1.46zm13.11 6.34L4.85 6.13c-.15-.09-.32-.13-.49-.13-.39 0-.71.32-.71.71v10.58c0 .39.32.71.71.71.17 0 .34-.04.49-.13l11.26-5.48c.32-.16.51-.48.51-.83s-.19-.67-.51-.83zm.51-1.34l-2.61-1.53 3.85 2.26c-.32.16-.51.48-.51.83s.19.67.51.83l-3.85 2.26 2.61-1.53c.64-.31 1.05-.96 1.05-1.66s-.41-1.35-1.05-1.66z"/>
                                 </svg>
                                 <div class="store-badge-text">
@@ -112,20 +116,24 @@
 
                     <div class="hero-feature-tags reveal">
                         <span class="feat-tag">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span data-i18n="hero_feat_ai">Gemini AI 맞춤 추천</span>
+                            <span class="feat-tag-icon">🪵</span>
+                            <span data-i18n="hero_tag_bookshelf">원목 책장 뷰</span>
                         </span>
                         <span class="feat-tag">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span data-i18n="hero_feat_ocr">On-Device OCR</span>
+                            <span class="feat-tag-icon">⏱️</span>
+                            <span data-i18n="hero_tag_timer">몰입 독서 타이머</span>
                         </span>
                         <span class="feat-tag">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span data-i18n="hero_feat_social">실시간 소셜 모임</span>
+                            <span class="feat-tag-icon">🦉</span>
+                            <span data-i18n="hero_tag_persona">24시간 독서 페르소나</span>
                         </span>
                         <span class="feat-tag">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span data-i18n="hero_feat_cross">iOS & Android 크로스 플랫폼</span>
+                            <span class="feat-tag-icon">🎨</span>
+                            <span data-i18n="hero_tag_card">카드 테마 스튜디오</span>
+                        </span>
+                        <span class="feat-tag">
+                            <span class="feat-tag-icon">📊</span>
+                            <span data-i18n="hero_tag_report">월간 결산 리포트</span>
                         </span>
                     </div>
                 </div>
@@ -133,20 +141,19 @@
                 <div class="hero-visual reveal">
                     <div class="mockup-backdrop-glow"></div>
                     
-                    <!-- Smartphone Mockup Device with Internal Padding -->
+                    <!-- Modern Universal Smartphone Mockup -->
                     <div class="device-frame">
                         <div class="device-island"></div>
                         <div class="device-screen">
                             <div class="hero-slideshow" id="hero-slideshow">
-                                <img src="assets/images/android/hero_home.jpeg" alt="북트랙 홈 화면" class="hero-slide active" id="hero-slide-0">
-                                <img src="assets/images/android/hero_library.jpeg" alt="북트랙 스마트 서재" class="hero-slide" id="hero-slide-1">
-                                <img src="assets/images/android/spotlight_dashboard.png" alt="통합 독서기록 대시보드" class="hero-slide" id="hero-slide-2">
-                                <img src="assets/images/android/spotlight_diary.png" alt="일일 독서 다이어리" class="hero-slide" id="hero-slide-3">
-                                <img src="assets/images/android/hero_timer.jpeg" alt="독서 타이머 측정" class="hero-slide" id="hero-slide-4">
-                                <img src="assets/images/android/hero_search.jpeg" alt="도서 검색 및 바코드 스캔" class="hero-slide" id="hero-slide-5">
-                                <img src="assets/images/android/spotlight_card_custom.jpeg" alt="감상평 카드 커스텀 테마" class="hero-slide" id="hero-slide-6">
-                                <img src="assets/images/android/hero_review_save.jpeg" alt="감상평 이미지 저장" class="hero-slide" id="hero-slide-7">
-                                <img src="assets/images/android/hero_ai_report.jpeg" alt="AI 독서 리포트" class="hero-slide" id="hero-slide-8">
+                                <img src="assets/figma_images/hero_home.png" alt="북트랙 홈 화면" class="hero-slide active" id="hero-slide-0">
+                                <img src="assets/figma_images/sec1_bookshelf.png" alt="원목 책장 뷰" class="hero-slide" id="hero-slide-1">
+                                <img src="assets/figma_images/sec1_timer.png" alt="몰입 독서 타이머" class="hero-slide" id="hero-slide-2">
+                                <img src="assets/figma_images/sec2_persona.png" alt="24시간 독서 페르소나" class="hero-slide" id="hero-slide-3">
+                                <img src="assets/figma_images/sec3_record_dashboard.png" alt="통합 독서기록 대시보드" class="hero-slide" id="hero-slide-4">
+                                <img src="assets/figma_images/sec5_diary.png" alt="일일 독서 다이어리" class="hero-slide" id="hero-slide-5">
+                                <img src="assets/figma_images/sec5_card_custom.png" alt="감상평 카드 커스텀 에디터" class="hero-slide" id="hero-slide-6">
+                                <img src="assets/figma_images/sec6_monthly_insight.png" alt="실물 책등 서가 인포그래픽 리포트" class="hero-slide" id="hero-slide-7">
                             </div>
                         </div>
                     </div>
@@ -155,425 +162,414 @@
         </div>
     </section>
 
-    <!-- Core 12 Features Section (Notion v1.1.0) -->
-    <section id="features">
+    <!-- SECTION 1: 1️⃣ 내 서재 & 목표 관리, 몰입의 독서 타이머 -->
+    <section id="sec-library" class="feature-section">
         <div class="container">
-            <div class="section-header reveal">
-                <div class="section-tag" data-i18n="feat_sec_tag">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-                    KEY VALUE PROPOSITION
-                </div>
-                <h2 class="section-title" data-i18n-html="feat_sec_title">스마트한 독서 여정을 위한 <span class="gradient-text">12대 특장점</span></h2>
-                <p class="section-subtitle" data-i18n="feat_sec_subtitle">
-                    단순한 책 목록 관리를 넘어, Gemini AI 맞춤 분석부터 몰입 타이머, On-Device 문장 추출과 카드 테마 커스텀, 일일 다이어리, 소셜 모임까지 독서의 전 과정을 책임집니다.
-                </p>
+            <div class="section-badge-wrap reveal">
+                <span class="notion-badge">1️⃣ MY LIBRARY & TIMER</span>
+            </div>
+            <div class="section-title-wrap reveal">
+                <h2 class="section-main-title" data-i18n-html="sec1_title">내 서재 & 목표 관리, <span class="gradient-text">몰입의 독서 타이머</span></h2>
+                <p class="section-lead-quote" data-i18n="sec1_lead">"실제 원목 서가에 꽂아둔 듯 실감 나는 책장 감상과 집중을 극대화하는 시간 측정"</p>
             </div>
 
-            <div class="features-grid">
-                <!-- Feature 1: AI 맞춤 추천 & 홈 큐레이션 -->
-                <div class="feature-card highlight-card reveal">
-                    <span class="feature-num-badge">01</span>
-                    <div class="feature-icon-wrap">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
-                        </svg>
+            <div class="feature-showcase-grid reveal">
+                <!-- Left Details Content -->
+                <div class="showcase-content-area">
+                    <div class="notion-card-block">
+                        <div class="card-bullet-header">
+                            <span class="bullet-emoji">🪵</span>
+                            <h3 data-i18n="sec1_f1_title">아날로그 감성의 원목 책장 뷰 & 리스트 뷰</h3>
+                        </div>
+                        <p data-i18n="sec1_f1_desc">
+                            실제 원목 책장에 꽂아둔 듯 실감 나는 2줄 서가 배치와 부드러운 연속 스크롤로 소장한 도서들을 감상할 수 있습니다. 읽는 중 / 완독 / 읽을 예정 상태별 필터링과 커스텀 책장(폴더) 분류를 완벽히 지원합니다.
+                        </p>
                     </div>
-                    <h3 class="feature-title" data-i18n="feat_1_title">AI 맞춤 추천 & 홈 큐레이션</h3>
-                    <span class="feature-catchphrase" data-i18n="feat_1_quote">"당신의 독서 취향을 꿰뚫어 보는 Gemini AI 도서 추천"</span>
-                    <p class="feature-description" data-i18n="feat_1_desc">
-                        읽은 책 기록과 독서 페르소나를 정밀 분석하여 나만을 위한 Gemini AI 맞춤 도서를 추천합니다. 알라딘 실시간 베스트셀러 및 신간 카러셀, 비한국어 환경 및 글로벌 해외 도서까지 아우르는 스마트 이중화 검색 엔진을 지원합니다.
-                    </p>
-                    <ul class="feature-bullet-list">
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_1_b1">알라딘 실시간 베스트셀러 & 큐레이션 신간 카러셀</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_1_b2">서재 기반 스마트 Gemini AI 맞춤 도서 추천 카드</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_1_b3">비한국어 환경/해외 도서까지 대응하는 스마트 이중화 검색</span></li>
-                    </ul>
+
+                    <div class="notion-card-block">
+                        <div class="card-bullet-header">
+                            <span class="bullet-emoji">⚡</span>
+                            <h3 data-i18n="sec1_f2_title">1초 바코드(ISBN) 스캔 & 과거 완독 등록</h3>
+                        </div>
+                        <p data-i18n="sec1_f2_desc">
+                            카메라 스캔 한 번으로 도서 정보, 고화질 표지, 장르 메타데이터를 즉시 등록합니다. 예전에 읽었던 책도 읽은 기간, 독서 시간, 평점을 입력하여 손쉽게 서재에 보관하고 통계에 반영할 수 있습니다.
+                        </p>
+                    </div>
+
+                    <div class="notion-card-block">
+                        <div class="card-bullet-header">
+                            <span class="bullet-emoji">⏱️</span>
+                            <h3 data-i18n="sec1_f3_title">스마트 스톱워치 & 목표 카운트다운 타이머</h3>
+                        </div>
+                        <p data-i18n="sec1_f3_desc">
+                            자유로운 독서 시간 측정은 물론, 목표 시간 완독을 돕는 카운트다운 타이머를 제공합니다. 백그라운드에서도 시간 측정이 안전하게 유지되며, 세션 종료 시 읽은 페이지와 감정 태그가 함께 기록됩니다.
+                        </p>
+                    </div>
+
+                    <div class="notion-card-block">
+                        <div class="card-bullet-header">
+                            <span class="bullet-emoji">🎯</span>
+                            <h3 data-i18n="sec1_f4_title">월간 & 연간 독서 목표 관리</h3>
+                        </div>
+                        <p data-i18n="sec1_f4_desc">
+                            권수와 독서 시간 목표를 설정하고, 실시간 달성률 게이지를 통해 꾸준하고 흔들림 없는 독서 습관을 만듭니다.
+                        </p>
+                    </div>
+
+                    <!-- Screen Switcher Tabs for Section 1 -->
+                    <div class="screen-tab-pills" role="tablist">
+                        <button type="button" class="screen-tab active" data-target="sec1-img" data-src="assets/figma_images/sec1_bookshelf.png" data-en-src="assets/images/android/hero_library_en.jpeg">
+                            <span>원목 책장 뷰</span>
+                        </button>
+                        <button type="button" class="screen-tab" data-target="sec1-img" data-src="assets/figma_images/sec1_list.png" data-en-src="assets/figma_images/sec1_list.png">
+                            <span>리스트 뷰</span>
+                        </button>
+                        <button type="button" class="screen-tab" data-target="sec1-img" data-src="assets/figma_images/sec1_timer.png" data-en-src="assets/images/android/hero_timer_en.jpeg">
+                            <span>독서 타이머</span>
+                        </button>
+                        <button type="button" class="screen-tab" data-target="sec1-img" data-src="assets/figma_images/sec1_barcode.png" data-en-src="assets/images/android/hero_search_en.jpeg">
+                            <span>바코드 스캔</span>
+                        </button>
+                    </div>
                 </div>
 
-                <!-- Feature 2: 손쉬운 도서 검색, 서재 보관 & 과거 완독 등록 -->
-                <div class="feature-card reveal">
-                    <span class="feature-num-badge">02</span>
-                    <div class="feature-icon-wrap">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-                            <line x1="16" y1="2" x2="16" y2="6"/>
-                            <line x1="8" y1="2" x2="8" y2="6"/>
-                            <line x1="3" y1="10" x2="21" y2="10"/>
-                        </svg>
+                <!-- Right Visual Mockup -->
+                <div class="showcase-visual-area">
+                    <div class="showcase-mockup-frame">
+                        <img src="assets/figma_images/sec1_bookshelf.png" alt="원목 책장 뷰 화면" id="sec1-img" class="mockup-img">
                     </div>
-                    <h3 class="feature-title">
-                        <span data-i18n="feat_2_title">손쉬운 도서 검색, 서재 보관 & 과거 완독 등록</span>
-                        <span class="badge-new" data-i18n="feat_2_badge">NEW</span>
-                    </h3>
-                    <span class="feature-catchphrase" data-i18n="feat_2_quote">"바코드(ISBN) 1초 검색부터 과거에 읽은 책 등록까지 빈틈없는 서재 관리"</span>
-                    <p class="feature-description" data-i18n="feat_2_desc">
-                        카메라 바코드 스캔으로 1초 만에 도서를 등록하고 읽는 중, 완독, 읽고 싶은 책 분류와 E-Book 플래그를 지원합니다. 3단계 과거 완독 도서(Past Read) 위저드로 기존에 읽었던 소중한 기록도 통계에 완벽히 반영합니다.
-                    </p>
-                    <ul class="feature-bullet-list">
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_2_b1">카메라 ISBN 바코드 1초 스캔 연동 및 구매 링크 제공</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_2_b2">읽는 중 / 완독 / 읽고 싶은 책 스마트 분류 & E-Book 플래그</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_2_b3">[NEW] 과거 완독 도서(Past Read) 3단계 위저드(기간/시간/등록)</span></li>
-                    </ul>
-                </div>
-
-                <!-- Feature 3: 나만의 맞춤 책장 & 다중 편집 -->
-                <div class="feature-card reveal">
-                    <span class="feature-num-badge">03</span>
-                    <div class="feature-icon-wrap">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title" data-i18n="feat_3_title">나만의 맞춤 책장(폴더) & 다중 편집</h3>
-                    <span class="feature-catchphrase" data-i18n="feat_3_quote">"카테고리별로 깔끔하게 정리하는 나만의 커스텀 책장"</span>
-                    <p class="feature-description" data-i18n="feat_3_desc">
-                        원하는 테마별로 자유롭게 책장 폴더를 생성할 수 있습니다. N:M 다대다 매핑 구조와 다중 선택(멀티 셀렉트) 모드로 수십 권의 책도 한 번에 책장으로 이동하고 깔끔하게 정리합니다.
-                    </p>
-                    <ul class="feature-bullet-list">
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_3_b1">N:M 다대다 매핑 구조의 자유로운 책장(폴더) 생성</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_3_b2">다중 선택(멀티 셀렉트) 모드로 한 번에 일괄 이동/제거</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_3_b3">폴더별 독서 통계 및 직관적인 서재 오거나이징</span></li>
-                    </ul>
-                </div>
-
-                <!-- Feature 4: 몰입 독서 타이머 & 카운트다운 -->
-                <div class="feature-card reveal">
-                    <span class="feature-num-badge">04</span>
-                    <div class="feature-icon-wrap">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"/>
-                            <polyline points="12 6 12 12 16 14"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title" data-i18n="feat_4_title">몰입을 돕는 독서 타이머 & 카운트다운</h3>
-                    <span class="feature-catchphrase" data-i18n="feat_4_quote">"오늘 읽은 시간과 페이지를 정확하게 측정하고 기록"</span>
-                    <p class="feature-description" data-i18n="feat_4_desc">
-                        자유 측정 스톱워치와 목표 시간 설정 카운트다운 타이머를 모두 제공합니다. 독서 세션 종료 시 읽은 페이지, 12가지 감정 태그를 함께 남기고, 독서 속도를 분석해 완독일을 자동으로 연산합니다.
-                    </p>
-                    <ul class="feature-bullet-list">
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_4_b1">자유 측정 스톱워치 & 목표 카운트다운 듀얼 모드</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_4_b2">세션 종료 시 읽은 페이지 & 감정 태그 즉시 기록</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_4_b3">독서 속도 기반 완독일 실시간 자동 연산</span></li>
-                    </ul>
-                </div>
-
-                <!-- Feature 5: 카메라 OCR 문장 추출 & 감성 감상평 카드 -->
-                <div class="feature-card reveal">
-                    <span class="feature-num-badge">05</span>
-                    <div class="feature-icon-wrap">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
-                            <circle cx="12" cy="13" r="4"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title" data-i18n="feat_5_title">카메라 OCR 문장 추출 & 감성 감상평 카드</h3>
-                    <span class="feature-catchphrase" data-i18n="feat_5_quote">"책 속의 명문장을 카메라로 찍고 나만의 감성 카드로 소장"</span>
-                    <p class="feature-description" data-i18n="feat_5_desc">
-                        On-Device AI OCR(Android ML Kit / iOS VisionKit) 기술로 책 속 구절을 즉시 텍스트로 자동 추출합니다. 12가지 감정 태그와 5성 평점, 인용구와 리뷰를 조합해 전시용 감상평 카드로 즉시 변환합니다.
-                    </p>
-                    <ul class="feature-bullet-list">
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_5_b1">On-Device AI OCR(ML Kit/VisionKit) 문장 자동 추출</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_5_b2">12가지 다채로운 감정 태그 & 5성 평점 시스템</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_5_b3">인용구와 리뷰를 결합한 원터치 전시용 카드 생성</span></li>
-                    </ul>
-                </div>
-
-                <!-- Feature 6: 감상평 카드 테마 커스텀 & 아날로그 감성 -->
-                <div class="feature-card reveal">
-                    <span class="feature-num-badge">06</span>
-                    <div class="feature-icon-wrap">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">
-                        <span data-i18n="feat_6_title">감상평 카드 테마 커스텀 & 아날로그 감성</span>
-                        <span class="badge-new" data-i18n="feat_6_badge">NEW</span>
-                    </h3>
-                    <span class="feature-catchphrase" data-i18n="feat_6_quote">"12가지 디테일 컬러, 그라데이션, 종이 질감으로 완성하는 독서 카드"</span>
-                    <p class="feature-description" data-i18n="feat_6_desc">
-                        배경, 카드 배경, 도서 제목, 저자, 인용구, 감상평, 별점, 감정 태그, 워터마크 등 12가지 세부 요소를 개별 조색할 수 있습니다. 8방향 선형 그라데이션, 아날로그 종이 질감 오버레이, 4종 타이포그래피를 지원합니다.
-                    </p>
-                    <ul class="feature-bullet-list">
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_6_b1">배경·인용구·별점 등 12가지 세부 요소 커스텀 컬러링</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_6_b2">8방향 선형 그라데이션 & 아날로그 종이 질감 텍스처</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_6_b3">4종 타이포그래피 스타일 & 프리셋/사용자 테마 저장</span></li>
-                    </ul>
-                </div>
-
-                <!-- Feature 7: 카드 레이아웃 드래그 앤 드롭 & 자유 재배치 -->
-                <div class="feature-card reveal">
-                    <span class="feature-num-badge">07</span>
-                    <div class="feature-icon-wrap">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="8" y1="6" x2="21" y2="6"/>
-                            <line x1="8" y1="12" x2="21" y2="12"/>
-                            <line x1="8" y1="18" x2="21" y2="18"/>
-                            <line x1="3" y1="6" x2="3.01" y2="6"/>
-                            <line x1="3" y1="12" x2="3.01" y2="12"/>
-                            <line x1="3" y1="18" x2="3.01" y2="18"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">
-                        <span data-i18n="feat_7_title">카드 레이아웃 드래그 앤 드롭 & 자유 재배치</span>
-                        <span class="badge-new" data-i18n="feat_7_badge">NEW</span>
-                    </h3>
-                    <span class="feature-catchphrase" data-i18n="feat_7_quote">"손끝 터치 하나로 카드의 구성을 내 마음대로 디자인"</span>
-                    <p class="feature-description" data-i18n="feat_7_desc">
-                        롱클릭 드래그 앤 드롭(Reorderable)으로 표지, 별점, 인용구, 본문, 푸터 등 5대 카드 구성 요소의 순서를 실시간 변경합니다. 자석 스냅 햅틱 피드백과 블록별 표시/숨김(Visibility) 토글을 제공합니다.
-                    </p>
-                    <ul class="feature-bullet-list">
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_7_b1">롱클릭 드래그 앤 드롭(Reorderable) 실시간 순서 변경</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_7_b2">경쾌한 조작감의 자석 스냅 햅틱 피드백</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_7_b3">블록별 표시/숨김(Visibility) 토글로 맞춤 강조</span></li>
-                    </ul>
-                </div>
-
-                <!-- Feature 8: SNS 최적화 멀티 비율 크롭 & 고화질 공유 -->
-                <div class="feature-card reveal">
-                    <span class="feature-num-badge">08</span>
-                    <div class="feature-icon-wrap">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="18" cy="5" r="3"/>
-                            <circle cx="6" cy="12" r="3"/>
-                            <circle cx="18" cy="19" r="3"/>
-                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
-                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">
-                        <span data-i18n="feat_8_title">SNS 최적화 멀티 비율 크롭 & 고화질 공유</span>
-                        <span class="badge-new" data-i18n="feat_8_badge">NEW</span>
-                    </h3>
-                    <span class="feature-catchphrase" data-i18n="feat_8_quote">"인스타그램 스토리(9:16)부터 피드(1:1)까지 한 번에"</span>
-                    <p class="feature-description" data-i18n="feat_8_desc">
-                        1:1(정사각형 피드), 4:5(인스타 피드), 9:16(스토리/릴스) 등 비율별 카드를 실시간 미리보기로 확인합니다. 무손실 고해상도로 렌더링하여 갤러리에 저장하고 외부 SNS에 원클릭으로 공유하세요.
-                    </p>
-                    <ul class="feature-bullet-list">
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_8_b1">1:1, 4:5, 9:16 등 멀티 종횡비 실시간 프리뷰</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_8_b2">무손실 고해상도 이미지 렌더링 & 갤러리 1초 저장</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_8_b3">인스타그램, X, 카카오톡 등 외부 플랫폼 즉시 공유</span></li>
-                    </ul>
-                </div>
-
-                <!-- Feature 9: 한눈에 보는 독서 통계 & 업적 뱃지 -->
-                <div class="feature-card reveal">
-                    <span class="feature-num-badge">09</span>
-                    <div class="feature-icon-wrap">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="18" y1="20" x2="18" y2="10"/>
-                            <line x1="12" y1="20" x2="12" y2="4"/>
-                            <line x1="6" y1="20" x2="6" y2="14"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title" data-i18n="feat_9_title">한눈에 보는 독서 통계 & 업적 뱃지</h3>
-                    <span class="feature-catchphrase" data-i18n="feat_9_quote">"월별/연도별 독서량 그래프와 성장하는 독서 레벨"</span>
-                    <p class="feature-description" data-i18n="feat_9_desc">
-                        과거 완독 기록까지 통합된 월간/연간 완독 도서 권수 및 총 독서 시간 차트를 시각화합니다. 브론즈부터 플래티넘까지 4개 등급의 독서 업적 뱃지와 출석 캘린더, 카테고리별 선호도 통계를 제공합니다.
-                    </p>
-                    <ul class="feature-bullet-list">
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_9_b1">과거 완독 통합 월간/연간 완독 도서 권수 및 시간 차트</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_9_b2">4단계(브론즈~플래티넘) 성취감 넘치는 독서 업적 뱃지</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_9_b3">출석 캘린더 & 카테고리별 선호도 심층 통계 분석</span></li>
-                    </ul>
-                </div>
-
-                <!-- Feature 10: 실시간 독서 모임 & Gemini AI 리포트 -->
-                <div class="feature-card highlight-card reveal">
-                    <span class="feature-num-badge">10</span>
-                    <div class="feature-icon-wrap">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                            <circle cx="9" cy="7" r="4"/>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title" data-i18n="feat_10_title">실시간 독서 모임 & Gemini AI 리포트</h3>
-                    <span class="feature-catchphrase" data-i18n="feat_10_quote">"친구들과 독서 랭킹을 겨루고 Gemini AI 독서 페르소나 리포트 받기"</span>
-                    <p class="feature-description" data-i18n="feat_10_desc">
-                        6자리 초대 코드로 간편하게 독서 모임을 만들고 친구들과 실시간으로 읽는 책, 읽은 페이지, 시간을 공유합니다. 그룹 채팅과 랭킹 리더보드, 나의 독서 성향을 심층 분석하는 Gemini AI 리포트를 제공합니다.
-                    </p>
-                    <ul class="feature-bullet-list">
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_10_b1">6자리 초대 코드로 간편 개설/참여하는 독서 모임</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_10_b2">그룹원 간 실시간 독서 활동 공유, 리더보드 & 실시간 채팅</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_10_b3">독서 패턴 및 필체 분석 기반 Gemini AI 독서 리포트</span></li>
-                    </ul>
-                </div>
-
-                <!-- Feature 11: 일일 독서 다이어리 & 나만의 감성 테마 -->
-                <div class="feature-card reveal">
-                    <span class="feature-num-badge">11</span>
-                    <div class="feature-icon-wrap">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10l6 6v8a2 2 0 0 1-2 2z"/>
-                            <polyline points="14 2 14 8 20 8"/>
-                            <line x1="16" y1="13" x2="8" y2="13"/>
-                            <line x1="16" y1="17" x2="8" y2="17"/>
-                            <polyline points="10 9 9 9 8 9"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">
-                        <span data-i18n="feat_11_title">일일 독서 다이어리 & 나만의 감성 테마</span>
-                        <span class="badge-new" data-i18n="feat_11_badge">NEW</span>
-                    </h3>
-                    <span class="feature-catchphrase" data-i18n="feat_11_quote">"책과 함께한 하루의 생각을 기록하고 12종 감성 폰트로 소장"</span>
-                    <p class="feature-description" data-i18n="feat_11_desc">
-                        책을 읽고 떠오른 생각, 일기 메모, 본문 사진 첨부 및 배경 이미지를 삽입할 수 있습니다. 단색 및 그라데이션 테마, 12종 감성 폰트, 글자 크기/색상 조색 및 직관적인 UI 네이밍을 제공합니다.
-                    </p>
-                    <ul class="feature-bullet-list">
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_11_b1">책과 함께한 일기 메모, 본문 사진 첨부 & 배경 이미지</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_11_b2">단색 & 그라데이션 테마, 12종 감성 폰트, 텍스트 커스텀</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_11_b3">화면 탑바 '독서 기록' & '기록 저장하기' 직관적 UI</span></li>
-                    </ul>
-                </div>
-
-                <!-- Feature 12: 통합 기록 대시보드 & 나의 기록 스타일 분석 -->
-                <div class="feature-card reveal">
-                    <span class="feature-num-badge">12</span>
-                    <div class="feature-icon-wrap">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="3" width="7" height="9"/>
-                            <rect x="14" y="3" width="7" height="5"/>
-                            <rect x="14" y="12" width="7" height="9"/>
-                            <rect x="3" y="16" width="7" height="5"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">
-                        <span data-i18n="feat_12_title">통합 기록 대시보드 & 나의 기록 스타일 분석</span>
-                        <span class="badge-new" data-i18n="feat_12_badge">NEW</span>
-                    </h3>
-                    <span class="feature-catchphrase" data-i18n="feat_12_quote">"독서 캘린더부터 다이어리, 감상평까지 한눈에 모아보는 대시보드"</span>
-                    <p class="feature-description" data-i18n="feat_12_desc">
-                        독서 캘린더, 최근 다이어리, 최근 감상평을 한눈에 모아보는 '전체' 대시보드 탭을 지원합니다. 일일/누적 요약 통계 배너와 사용자 맞춤 '나의 기록 스타일' 캐릭터 페르소나를 분석합니다.
-                    </p>
-                    <ul class="feature-bullet-list">
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_12_b1">독서 캘린더, 최근 다이어리, 감상평 통합 '전체' 대시보드</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_12_b2">일일/누적 독서 기록 요약 통계 배너 & 캘린더 연동</span></li>
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="feat_12_b3">사용자 맞춤 '나의 기록 스타일' 캐릭터 페르소나 분석</span></li>
-                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Deep Dive Spotlight Feature Showcase (3 Spotlights) -->
-    <section id="showcase-deepdive">
+    <!-- SECTION 2: 2️⃣ 24시간 독서 성향 & 나만의 독서 페르소나 -->
+    <section id="sec-persona" class="feature-section alt-bg">
         <div class="container">
-            <div class="section-header reveal">
-                <div class="section-tag" data-i18n="spotlight_sec_tag">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    SPOTLIGHT FEATURES
-                </div>
-                <h2 class="section-title" data-i18n-html="spotlight_sec_title">독서의 깊이를 더하는 <span class="gradient-text">북트랙 핵심 기술</span></h2>
-                <p class="section-subtitle" data-i18n="spotlight_sec_subtitle">최신 On-Device AI와 클라우드 인텔리전스가 결합된 차세대 독서 경험을 만나보세요.</p>
+            <div class="section-badge-wrap reveal">
+                <span class="notion-badge">2️⃣ 24H PATTERN & READING PERSONA</span>
+            </div>
+            <div class="section-title-wrap reveal">
+                <h2 class="section-main-title" data-i18n-html="sec2_title">24시간 독서 성향 & <span class="gradient-text">나만의 독서 페르소나</span></h2>
+                <p class="section-lead-quote" data-i18n="sec2_lead">"00시부터 23시까지, 내가 가장 집중하는 황금 시간대와 독서 캐릭터를 진단하다"</p>
             </div>
 
-            <!-- Spotlight 1: Gemini AI Report -->
-            <div class="deepdive-grid reveal">
-                <div class="deepdive-text-area">
-                    <div class="section-tag" data-i18n="spotlight_1_tag">AI INTELLIGENCE</div>
-                    <h3 class="deepdive-heading" data-i18n-html="spotlight_1_title"><span class="gradient-text">독서 리포트</span></h3>
-                    <p class="deepdive-lead" data-i18n="spotlight_1_lead">
-                        서재 데이터와 감상평 필체를 심층 분석하여 Gemini AI가 독서 페르소나 키워드와 맞춤 인사이트를 발행합니다.
-                    </p>
-                    <div class="deepdive-points">
-                        <div class="point-item">
-                            <div class="point-icon">🧠</div>
-                            <div class="point-text">
-                                <h4 data-i18n="spotlight_1_p1_h">독서 페르소나 도출</h4>
-                                <p data-i18n="spotlight_1_p1_p">단순 장르 구분을 넘어 지적 탐구형, 감성 몰입형 등 나의 독서 스타일을 정밀하게 규정합니다.</p>
-                            </div>
-                        </div>
-                        <div class="point-item">
-                            <div class="point-icon">📊</div>
-                            <div class="point-text">
-                                <h4 data-i18n="spotlight_1_p2_h">맞춤 추천 & 서재 인사이트</h4>
-                                <p data-i18n="spotlight_1_p2_p">현재 서재의 통계적 빈틈을 메워주는 맞춤 도서를 높은 정확도로 제안합니다.</p>
-                            </div>
+            <div class="feature-showcase-grid reverse reveal">
+                <!-- Left Details Content -->
+                <div class="showcase-content-area">
+                    <div class="persona-highlight-banner">
+                        <img src="persona/transparent/ST_T01_NIGHT_OWL.png" alt="심야의 사색가 페르소나" class="persona-avatar">
+                        <div class="persona-banner-text">
+                            <span class="persona-tag">READING PERSONA</span>
+                            <h4 data-i18n="sec2_banner_h">"심야의 사색가" & "새벽형 탐독가"</h4>
+                            <p data-i18n="sec2_banner_p">시간대, 속도, 완독 패턴을 정밀 분석해 나만의 고유한 독서 캐릭터를 도출합니다.</p>
                         </div>
                     </div>
-                </div>
-                <div class="deepdive-visual-area">
-                    <div class="showcase-mockup-wrap">
-                        <div class="showcase-mockup-screen">
-                            <img src="assets/images/android/hero_ai_report.jpeg" alt="Gemini AI 독서 페르소나 리포트 화면" id="spotlight-img-1">
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Spotlight 2: Card Theme Studio & Drag-and-Drop -->
-            <div class="deepdive-grid reverse reveal">
-                <div class="deepdive-text-area">
-                    <div class="section-tag" data-i18n="spotlight_2_tag">THEME & DRAG-AND-DROP</div>
-                    <h3 class="deepdive-heading" data-i18n-html="spotlight_2_title"><span class="gradient-text">나만의 맞춤 카드 테마 스튜디오</span></h3>
-                    <p class="deepdive-lead" data-i18n="spotlight_2_lead">
-                        12가지 세부 요소 커스텀 조색과 롱클릭 드래그 앤 드롭으로 카드의 구성 요소를 자유롭게 재배치하고 나만의 테마로 소장하세요.
-                    </p>
-                    <div class="deepdive-points">
-                        <div class="point-item">
-                            <div class="point-icon">🎨</div>
-                            <div class="point-text">
-                                <h4 data-i18n="spotlight_2_p1_h">12가지 디테일 조색 & 종이 질감</h4>
-                                <p data-i18n="spotlight_2_p1_p">배경 그라데이션부터 활자 종이 질감 오버레이, 4종 타이포그래피까지 정밀하게 커스텀합니다.</p>
-                            </div>
+                    <div class="notion-card-block">
+                        <div class="card-bullet-header">
+                            <span class="bullet-emoji">🔥</span>
+                            <h3 data-i18n="sec2_f1_title">24시간 독서 패턴 블록 차트 & 골드 코어타임</h3>
                         </div>
-                        <div class="point-item">
-                            <div class="point-icon">✋</div>
-                            <div class="point-text">
-                                <h4 data-i18n="spotlight_2_p2_h">자석 스냅 햅틱 드래그 & 토글</h4>
-                                <p data-i18n="spotlight_2_p2_p">표지, 별점, 인용구, 본문 순서를 드래그하여 바꾸고 원하는 블록만 켜고 끌 수 있습니다.</p>
-                            </div>
-                        </div>
+                        <p data-i18n="sec2_f1_desc">
+                            00시부터 23시까지 24개의 시간대 블록 히트맵으로 하루 중 언제 주로 책을 읽는지 한눈에 시각화합니다. 가장 집중도가 높은 시간대를 골드 하이라이트 요약 배너로 분석해 드립니다.
+                        </p>
                     </div>
-                </div>
-                <div class="deepdive-visual-area">
-                    <div class="showcase-mockup-wrap">
-                        <div class="showcase-mockup-screen">
-                            <img src="assets/images/android/spotlight_card_custom.jpeg" alt="감상평 카드 테마 스튜디오 화면" id="spotlight-img-2">
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Spotlight 3: Reading Log & Diary -->
-            <div class="deepdive-grid reveal">
-                <div class="deepdive-text-area">
-                    <div class="section-tag" data-i18n="spotlight_3_tag">READING LOG & DIARY</div>
-                    <h3 class="deepdive-heading" data-i18n-html="spotlight_3_title"><span class="gradient-text">독서 기록 작성</span></h3>
-                    <p class="deepdive-lead" data-i18n="spotlight_3_lead">
-                        책을 읽고 떠오른 생각과 일기를 다이어리로 기록하고, 사진 첨부와 12종 감성 폰트로 소중한 하루의 독서를 온전히 간직하세요.
-                    </p>
-                    <div class="deepdive-points">
-                        <div class="point-item">
-                            <div class="point-icon">📝</div>
-                            <div class="point-text">
-                                <h4 data-i18n="spotlight_3_p1_h">일일 독서 다이어리 & 사진 첨부</h4>
-                                <p data-i18n="spotlight_3_p1_p">책을 읽은 후의 단상과 일기를 자유롭게 적고, 본문 사진 첨부와 감성 배경으로 나만의 페이지를 만듭니다.</p>
-                            </div>
+                    <div class="notion-card-block">
+                        <div class="card-bullet-header">
+                            <span class="bullet-emoji">🧭</span>
+                            <h3 data-i18n="sec2_f2_title">독서 페르소나 심층 분석</h3>
                         </div>
-                        <div class="point-item">
-                            <div class="point-icon">🖋️</div>
-                            <div class="point-text">
-                                <h4 data-i18n="spotlight_3_p2_h">12종 감성 폰트 & 맞춤 서식</h4>
-                                <p data-i18n="spotlight_3_p2_p">취향에 맞는 감성 폰트와 글자 크기, 색상을 커스텀하고 캘린더 대시보드에서 작성한 기록을 한눈에 모아보세요.</p>
-                            </div>
+                        <p data-i18n="sec2_f2_desc">
+                            독서 시간대, 속도, 완독 패턴을 정밀 분석하여 나만의 독서 캐릭터(새벽형 탐독가, 심야의 사색가, 주말 몰입형 여행자, 다독가, 병렬 독서가 등)와 데이터 기반의 상세한 분석 이유를 제시합니다.
+                        </p>
+                    </div>
+
+                    <div class="notion-card-block">
+                        <div class="card-bullet-header">
+                            <span class="bullet-emoji">🏅</span>
+                            <h3 data-i18n="sec2_f3_title">연속 독서 스트릭 & 4단계 마일스톤 뱃지</h3>
                         </div>
+                        <p data-i18n="sec2_f3_desc">
+                            매일 책을 읽는 습관을 기를 수 있도록 연속 독서 일수를 알려주는 불꽃 스트릭 배너와 3일 달성, 7일 달성, 14일 도전, 30일 마스터 뱃지를 제공합니다.
+                        </p>
+                    </div>
+
+                    <!-- Screen Switcher Tabs for Section 2 -->
+                    <div class="screen-tab-pills" role="tablist">
+                        <button type="button" class="screen-tab active" data-target="sec2-img" data-src="assets/figma_images/sec2_weekly_pattern.png" data-en-src="assets/images/android/hero_ai_report_en.jpeg">
+                            <span>24시간 블록 히트맵</span>
+                        </button>
+                        <button type="button" class="screen-tab" data-target="sec2-img" data-src="assets/figma_images/sec2_persona.png" data-en-src="assets/images/android/hero_ai_report_en.jpeg">
+                            <span>독서 페르소나 분석</span>
+                        </button>
+                        <button type="button" class="screen-tab" data-target="sec2-img" data-src="assets/figma_images/sec2_achievements.png" data-en-src="assets/images/android/achievements.jpeg">
+                            <span>마일스톤 뱃지</span>
+                        </button>
                     </div>
                 </div>
-                <div class="deepdive-visual-area">
-                    <div class="showcase-mockup-wrap">
-                        <div class="showcase-mockup-screen">
-                            <img src="assets/images/android/spotlight_diary.png" alt="독서 기록 및 다이어리 작성 화면" id="spotlight-img-3">
-                        </div>
+
+                <!-- Right Visual Mockup -->
+                <div class="showcase-visual-area">
+                    <div class="showcase-mockup-frame">
+                        <img src="assets/figma_images/sec2_weekly_pattern.png" alt="24시간 독서 패턴 및 페르소나 화면" id="sec2-img" class="mockup-img">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Interactive App Screenshot Showcase Gallery -->
+    <!-- SECTION 3: 3️⃣ 나만의 기록 스타일 & 캐릭터 분석 -->
+    <section id="sec-records" class="feature-section">
+        <div class="container">
+            <div class="section-badge-wrap reveal">
+                <span class="notion-badge">3️⃣ RECORD STYLE & CHARACTER</span>
+            </div>
+            <div class="section-title-wrap reveal">
+                <h2 class="section-main-title" data-i18n-html="sec3_title">나만의 기록 스타일 & <span class="gradient-text">캐릭터 분석</span></h2>
+                <p class="section-lead-quote" data-i18n="sec3_lead">"작성하는 빈도와 글의 길이, 감정 태그에서 피어나는 나만의 독서 기록 아이덴티티"</p>
+            </div>
+
+            <div class="feature-showcase-grid reveal">
+                <!-- Left Details Content -->
+                <div class="showcase-content-area">
+                    <div class="notion-card-block">
+                        <div class="card-bullet-header">
+                            <span class="bullet-emoji">✍️</span>
+                            <h3 data-i18n="sec3_f1_title">독서 기록 습관 및 스타일 분석</h3>
+                        </div>
+                        <p data-i18n="sec3_f1_desc">
+                            작성 빈도, 글의 길이, 선택한 감정 태그의 분포를 종합 분석하여 나만의 독서 기록 캐릭터를 도출합니다. 깊이 있는 서평가인지, 짧고 강렬한 인용구 수집가인지 나의 기록 성향을 명확히 확인하세요.
+                        </p>
+                    </div>
+
+                    <div class="notion-card-block">
+                        <div class="card-bullet-header">
+                            <span class="bullet-emoji">📅</span>
+                            <h3 data-i18n="sec3_f2_title">통합 독서 기록 대시보드</h3>
+                        </div>
+                        <p data-i18n="sec3_f2_desc">
+                            독서 캘린더와 일일/누적 기록 현황 배너, 감상평·다이어리 통합 카운트로 나의 모든 독서 기록 여정을 한곳에서 유기적으로 모아보고 관리할 수 있습니다.
+                        </p>
+                    </div>
+
+                    <!-- Screen Switcher Tabs for Section 3 -->
+                    <div class="screen-tab-pills" role="tablist">
+                        <button type="button" class="screen-tab active" data-target="sec3-img" data-src="assets/figma_images/sec3_record_dashboard.png" data-en-src="assets/images/android/spotlight_dashboard_en.png">
+                            <span>통합 기록 대시보드</span>
+                        </button>
+                        <button type="button" class="screen-tab" data-target="sec3-img" data-src="assets/figma_images/sec3_record_style.png" data-en-src="assets/images/android/spotlight_dashboard_en.png">
+                            <span>기록 스타일 분석</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Visual Mockup -->
+                <div class="showcase-visual-area">
+                    <div class="showcase-mockup-frame">
+                        <img src="assets/figma_images/sec3_record_dashboard.png" alt="통합 독서기록 대시보드 화면" id="sec3-img" class="mockup-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: 4️⃣ 내 서재 기반 맞춤 도서 추천 -->
+    <section id="sec-recommend" class="feature-section alt-bg">
+        <div class="container">
+            <div class="section-badge-wrap reveal">
+                <span class="notion-badge">4️⃣ PERSONALIZED RECOMMENDATIONS</span>
+            </div>
+            <div class="section-title-wrap reveal">
+                <h2 class="section-main-title" data-i18n-html="sec4_title">내 서재 기반 <span class="gradient-text">맞춤 도서 추천</span></h2>
+                <p class="section-lead-quote" data-i18n="sec4_lead">"소장한 도서와 읽은 패턴을 정밀 분석해 발견하는 다음 인생 책"</p>
+            </div>
+
+            <div class="feature-showcase-grid reverse reveal">
+                <!-- Left Details Content -->
+                <div class="showcase-content-area">
+                    <div class="notion-card-block">
+                        <div class="card-bullet-header">
+                            <span class="bullet-emoji">💡</span>
+                            <h3 data-i18n="sec4_f1_title">내 서재 기반 맞춤 추천</h3>
+                        </div>
+                        <p data-i18n="sec4_f1_desc">
+                            내 서재에 등록된 도서 목록과 독서 통계를 바탕으로, 나의 독서 취향에 꼭 맞는 도서를 분석하여 높은 정확도로 추천해 드립니다.
+                        </p>
+                    </div>
+
+                    <div class="notion-card-block">
+                        <div class="card-bullet-header">
+                            <span class="bullet-emoji">📚</span>
+                            <h3 data-i18n="sec4_f2_title">서재 규모별 풍성한 맞춤 리스트</h3>
+                        </div>
+                        <p data-i18n="sec4_f2_desc">
+                            서재에 책이 쌓여갈수록 알고리즘이 더 정교해집니다. 서재 규모에 맞추어 풍성하고 깊이 있는 맞춤 추천 큐레이션 리스트를 제공합니다.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Visual Mockup -->
+                <div class="showcase-visual-area">
+                    <div class="showcase-mockup-frame">
+                        <img src="assets/figma_images/sec4_recommend.png" alt="내 서재 기반 도서 추천 화면" id="sec4-img" class="mockup-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: 5️⃣ 감각적인 독서 다이어리 & 감상평 카드 커스터마이징 -->
+    <section id="sec-diary-cards" class="feature-section">
+        <div class="container">
+            <div class="section-badge-wrap reveal">
+                <span class="notion-badge">5️⃣ DIARY & CUSTOM CARD STUDIO</span>
+            </div>
+            <div class="section-title-wrap reveal">
+                <h2 class="section-main-title" data-i18n-html="sec5_title">감각적인 독서 다이어리 & <span class="gradient-text">감상평 카드 커스터마이징</span></h2>
+                <p class="section-lead-quote" data-i18n="sec5_lead">"카메라 On-Device OCR 문장 추출부터 12종 감성 폰트, 종이 질감 카드 조색까지"</p>
+            </div>
+
+            <div class="feature-showcase-grid reveal">
+                <!-- Left Details Content -->
+                <div class="showcase-content-area">
+                    <div class="notion-card-block">
+                        <div class="card-bullet-header">
+                            <span class="bullet-emoji">📷</span>
+                            <h3 data-i18n="sec5_f1_title">카메라 OCR 문장 자동 인식</h3>
+                        </div>
+                        <p data-i18n="sec5_f1_desc">
+                            책 속 인상 깊은 구절을 카메라로 촬영하면 온디바이스 AI가 문장을 자동으로 인식하여 텍스트로 빠르게 추출해 줍니다.
+                        </p>
+                    </div>
+
+                    <div class="notion-card-block">
+                        <div class="card-bullet-header">
+                            <span class="bullet-emoji">📖</span>
+                            <h3 data-i18n="sec5_f2_title">일일 독서 다이어리</h3>
+                        </div>
+                        <p data-i18n="sec5_f2_desc">
+                            책을 읽고 떠오른 생각 메모와 본문 사진 첨부, 12가지 감성 폰트와 파스텔 테마로 하루하루 데일리 독서 일기를 감각적으로 작성할 수 있습니다.
+                        </p>
+                    </div>
+
+                    <div class="notion-card-block">
+                        <div class="card-bullet-header">
+                            <span class="bullet-emoji">🎨</span>
+                            <h3 data-i18n="sec5_f3_title">세부 요소 커스텀 카드 에디터</h3>
+                        </div>
+                        <p data-i18n="sec5_f3_desc">
+                            배경, 카드 상자, 폰트, 감정 태그, 별점, 워터마크 등 세부 요소의 색상 조색, 8방향 선형 그라데이션, 아날로그 종이 질감 텍스처를 지원하여 소장용 및 SNS 전시용 독서 카드로 제작할 수 있습니다.
+                        </p>
+                    </div>
+
+                    <!-- Screen Switcher Tabs for Section 5 -->
+                    <div class="screen-tab-pills" role="tablist">
+                        <button type="button" class="screen-tab active" data-target="sec5-img" data-src="assets/figma_images/sec5_diary.png" data-en-src="assets/images/android/spotlight_diary_en.png">
+                            <span>일일 다이어리</span>
+                        </button>
+                        <button type="button" class="screen-tab" data-target="sec5-img" data-src="assets/figma_images/sec5_card_custom.png" data-en-src="assets/images/android/spotlight_card_custom.jpeg">
+                            <span>카드 커스텀 테마</span>
+                        </button>
+                        <button type="button" class="screen-tab" data-target="sec5-img" data-src="assets/figma_images/sec5_review_tags.png" data-en-src="assets/images/android/hero_review_save_en.jpeg">
+                            <span>감정 태그 & 리뷰</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Visual Mockup -->
+                <div class="showcase-visual-area">
+                    <div class="showcase-mockup-frame">
+                        <img src="assets/figma_images/sec5_diary.png" alt="일일 독서 다이어리 화면" id="sec5-img" class="mockup-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: 6️⃣ 한 달의 여정을 담은 월간 리포트 -->
+    <section id="sec-monthly-report" class="feature-section alt-bg">
+        <div class="container">
+            <div class="section-badge-wrap reveal">
+                <span class="notion-badge">6️⃣ MONTHLY READING REPORT</span>
+            </div>
+            <div class="section-title-wrap reveal">
+                <h2 class="section-main-title" data-i18n-html="sec6_title">한 달의 여정을 담은 <span class="gradient-text">월간 리포트</span></h2>
+                <p class="section-lead-quote" data-i18n="sec6_lead">"한 달 동안 완독한 책들이 감성적인 실물 책등으로 꽂히는 비주얼 결산 리포트"</p>
+            </div>
+
+            <div class="feature-showcase-grid reverse reveal">
+                <!-- Left Details Content -->
+                <div class="showcase-content-area">
+                    <!-- Interactive Dual Sub-View Toggle Switcher -->
+                    <div class="dual-view-switcher" role="group" aria-label="Monthly Report View Switcher">
+                        <button type="button" class="view-btn active" id="btn-view-insight">
+                            <span class="view-icon">📊</span>
+                            <span data-i18n="sec6_view_insight">인사이트 리포트 (책등 서가)</span>
+                        </button>
+                        <button type="button" class="view-btn" id="btn-view-calendar">
+                            <span class="view-icon">🌿</span>
+                            <span data-i18n="sec6_view_calendar">독서 캘린더 (잔디 뷰)</span>
+                        </button>
+                        <button type="button" class="view-btn" id="btn-view-alltime">
+                            <span class="view-icon">🏆</span>
+                            <span data-i18n="sec6_view_alltime">올타임 총 독서 기록</span>
+                        </button>
+                    </div>
+
+                    <div class="notion-card-block">
+                        <div class="card-bullet-header">
+                            <span class="bullet-emoji">📚</span>
+                            <h3 data-i18n="sec6_f1_title">감성 실물 책등 서가 인포그래픽</h3>
+                        </div>
+                        <p data-i18n="sec6_f1_desc">
+                            한 달 동안 완독한 책들이 실제 책등 모양으로 서가에 나란히 꽂히는 감성적인 비주얼 결산 리포트를 제공합니다. 완독의 성취를 시각적인 포스터처럼 감상하세요.
+                        </p>
+                    </div>
+
+                    <div class="notion-card-block">
+                        <div class="card-bullet-header">
+                            <span class="bullet-emoji">📈</span>
+                            <h3 data-i18n="sec6_f2_title">독서 페이스 & 심층 분석</h3>
+                        </div>
+                        <p data-i18n="sec6_f2_desc">
+                            시간당 독서 페이지(p/h), 권당 평균 소요 시간, 전월 대비 성장 지표를 한눈에 비교하고, 완성된 결산 리포트 이미지를 갤러리에 간직하거나 공유할 수 있습니다.
+                        </p>
+                    </div>
+
+                    <div class="notion-card-block">
+                        <div class="card-bullet-header">
+                            <span class="bullet-emoji">🔀</span>
+                            <h3 data-i18n="sec6_f3_title">듀얼 서브 뷰 토글 스위처</h3>
+                        </div>
+                        <p data-i18n="sec6_f3_desc">
+                            <code>[인사이트 리포트]</code>와 <code>[독서 캘린더]</code>를 원터치로 오가며 한눈에 들어오는 결산 통계와 날짜별 잔디 출석 캘린더를 함께 확인합니다.
+                        </p>
+                    </div>
+
+                    <div class="notion-card-block">
+                        <div class="card-bullet-header">
+                            <span class="bullet-emoji">🏛️</span>
+                            <h3 data-i18n="sec6_f4_title">올타임 '총 독서 기록' 대시보드</h3>
+                        </div>
+                        <p data-i18n="sec6_f4_desc">
+                            완독 권수, 누적 독서 시간, 완독 페이지, 작성 기록 수를 깔끔한 카드 형태로 통합 집계하여 나의 독서 인생 전체의 발자취를 보여줍니다.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Visual Mockup -->
+                <div class="showcase-visual-area">
+                    <div class="showcase-mockup-frame">
+                        <img src="assets/figma_images/sec6_monthly_insight.png" alt="월간 리포트 책등 서가 인포그래픽 화면" id="sec6-img" class="mockup-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive App Screenshot Showcase Gallery (Unified - No OS Separation) -->
     <section id="gallery">
         <div class="container">
             <div class="section-header reveal">
@@ -582,23 +578,7 @@
                     APP SHOWCASE
                 </div>
                 <h2 class="section-title" data-i18n-html="gallery_sec_title">직관적이고 감각적인 <span class="gradient-text">북트랙 UI 쇼케이스</span></h2>
-                <p class="section-subtitle" data-i18n="gallery_sec_subtitle">독서 몰입감을 극대화하도록 정교하게 설계된 북트랙의 주요 화면들을 플랫폼별로 확인해 보세요.</p>
-            </div>
-
-            <!-- Platform Switch Tabs -->
-            <div class="gallery-tabs reveal">
-                <button class="tab-btn active" id="tab-android" data-platform="android">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M3 5.27v13.46c0 .82.68 1.45 1.5 1.45.24 0 .47-.06.69-.18l12-7.05-12-7.06c-.22-.12-.45-.18-.69-.18-.82 0-1.5.63-1.5 1.46zm13.11 6.34L4.85 6.13c-.15-.09-.32-.13-.49-.13-.39 0-.71.32-.71.71v10.58c0 .39.32.71.71.71.17 0 .34-.04.49-.13l11.26-5.48c.32-.16.51-.48.51-.83s-.19-.67-.51-.83zm.51-1.34l-2.61-1.53 3.85 2.26c-.32.16-.51.48-.51.83s.19.67.51.83l-3.85 2.26 2.61-1.53c.64-.31 1.05-.96 1.05-1.66s-.41-1.35-1.05-1.66z"/>
-                    </svg>
-                    <span data-i18n="tab_android">Google Play Showcase</span>
-                </button>
-                <button class="tab-btn" id="tab-ios" data-platform="ios">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z"/>
-                    </svg>
-                    <span data-i18n="tab_ios">App Store Showcase</span>
-                </button>
+                <p class="section-subtitle" data-i18n="gallery_sec_subtitle">독서 몰입감을 극대화하도록 정교하게 설계된 북트랙의 주요 화면들을 슬라이드로 확인해 보세요.</p>
             </div>
 
             <!-- Carousel Outer Container -->
@@ -607,7 +587,7 @@
                 
                 <div class="carousel-track-wrapper" id="carousel-wrapper">
                     <div class="carousel-track" id="gallery-track">
-                        <!-- Dynamically populated by JavaScript -->
+                        <!-- Dynamically populated by JavaScript from Figma screenshots -->
                     </div>
                 </div>
 
@@ -625,14 +605,14 @@
             <div class="download-banner reveal">
                 <div class="download-content">
                     <div class="section-tag" data-i18n="cta_sec_tag">GET STARTED TODAY</div>
-                    <h2 class="download-title" data-i18n-html="cta_sec_title">지금 북트랙과 함께<br><span class="gradient-text">더 깊고 풍요로운 독서</span>를 시작하세요</h2>
+                    <h2 class="download-title" data-i18n-html="cta_sec_title">지금 북트랙과 함께<br><span class="gradient-text">나를 알아가는 독서 여정</span>을 시작하세요</h2>
                     <p class="download-text" data-i18n="cta_sec_text">
-                        iOS와 Android 모두에서 완벽하게 동기화되는 북트랙. 지금 바로 무료로 다운로드하고 나만의 스마트한 서재를 완성해 보세요.
+                        책을 기록하고 독서 페르소나를 진단하는 가장 스마트한 독서 비서 북트랙. 지금 무료로 다운로드하고 나만의 서재를 완성해 보세요.
                     </p>
                     
                     <div class="store-badges">
-                        <a href="https://apps.apple.com/us/app/%EB%B6%81%ED%8A%B8%EB%9E%99/id6773334377" target="_blank" rel="noopener noreferrer" class="store-badge" id="cta-btn-ios">
-                            <svg viewBox="0 0 24 24">
+                        <a href="https://apps.apple.com/us/app/%EB%B6%81%ED%8A%B8%EB%9E%99/id6773334377" target="_blank" rel="noopener noreferrer" class="store-badge" id="cta-btn-ios" aria-label="Apple App Store">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
                                 <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z"/>
                             </svg>
                             <div class="store-badge-text">
@@ -640,8 +620,8 @@
                                 <span class="store-badge-title">App Store</span>
                             </div>
                         </a>
-                        <a href="https://play.google.com/store/apps/details?id=com.cns.booktrack" target="_blank" rel="noopener noreferrer" class="store-badge" id="cta-btn-android">
-                            <svg viewBox="0 0 24 24">
+                        <a href="https://play.google.com/store/apps/details?id=com.cns.booktrack" target="_blank" rel="noopener noreferrer" class="store-badge" id="cta-btn-android" aria-label="Google Play Store">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
                                 <path d="M3 5.27v13.46c0 .82.68 1.45 1.5 1.45.24 0 .47-.06.69-.18l12-7.05-12-7.06c-.22-.12-.45-.18-.69-.18-.82 0-1.5.63-1.5 1.46zm13.11 6.34L4.85 6.13c-.15-.09-.32-.13-.49-.13-.39 0-.71.32-.71.71v10.58c0 .39.32.71.71.71.17 0 .34-.04.49-.13l11.26-5.48c.32-.16.51-.48.51-.83s-.19-.67-.51-.83zm.51-1.34l-2.61-1.53 3.85 2.26c-.32.16-.51.48-.51.83s.19.67.51.83l-3.85 2.26 2.61-1.53c.64-.31 1.05-.96 1.05-1.66s-.41-1.35-1.05-1.66z"/>
                             </svg>
                             <div class="store-badge-text">
@@ -675,7 +655,7 @@
                         </div>
                     </div>
                     <p class="footer-desc" data-i18n="footer_desc">
-                        나만의 완벽한 독서 여정. 책을 읽고, 생각을 남기고, AI와 함께 더 스마트하게 성장하는 올인원 독서 비서입니다.
+                        나만의 완벽한 독서 여정. 책을 기록하고, 생각을 남기며, 나만의 독서 성향을 발견하는 올인원 스마트 독서 비서입니다.
                     </p>
                 </div>
 
@@ -705,6 +685,6 @@
     </footer>
 
     <!-- Interactive Scripts -->
-    <script src="main.js?v=20261022_2"></script>
+    <script src="main.js?v=20261106_1"></script>
 </body>
 </html>

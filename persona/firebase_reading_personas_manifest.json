@@ -1,0 +1,194 @@
+[
+  {
+    "id": "HM_G01_SF_EXPLORER",
+    "code": "HM_G01",
+    "screenType": "HOME",
+    "hasDedicatedAsset": true,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Fhome%2FHM_G01_SF_EXPLORER.webp?alt=media&token=0f05f7c1-e27d-4936-87c5-af70870a1015",
+    "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Fhome%2FHM_G01_SF_EXPLORER_thumb.webp?alt=media&token=b95aa558-1eab-4d17-9c33-af6fa82be202"
+  },
+  {
+    "id": "HM_G02_PHILO_THINKER",
+    "code": "HM_G02",
+    "screenType": "HOME",
+    "hasDedicatedAsset": true,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Fhome%2FHM_G02_PHILO_THINKER.webp?alt=media&token=ab971ac5-93b0-4e24-b830-cec35067f404",
+    "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Fhome%2FHM_G02_PHILO_THINKER_thumb.webp?alt=media&token=d5a97a12-8810-4304-9048-1f705e912b97"
+  },
+  {
+    "id": "HM_G03_HISTORY_EXPLORER",
+    "code": "HM_G03",
+    "screenType": "HOME",
+    "hasDedicatedAsset": true,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Fhome%2FHM_G03_HISTORY_EXPLORER.webp?alt=media&token=9fe83f97-ded5-421d-a9bf-4058c916b07d",
+    "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Fhome%2FHM_G03_HISTORY_EXPLORER_thumb.webp?alt=media&token=cff3f20a-d7c4-46a5-8fea-8b76313057d5"
+  },
+  {
+    "id": "HM_G04_LITERATURE_LOVER",
+    "code": "HM_G04",
+    "screenType": "HOME",
+    "hasDedicatedAsset": true,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Fhome%2FHM_G04_LITERATURE_LOVER.webp?alt=media&token=8ac28682-b700-4d55-8001-17c6bf75be10",
+    "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Fhome%2FHM_G04_LITERATURE_LOVER_thumb.webp?alt=media&token=7605cce5-76f2-484d-af6c-dae6fe82fc12"
+  },
+  {
+    "id": "HM_G05_GROWTH_STRATEGIST",
+    "code": "HM_G05",
+    "screenType": "HOME",
+    "hasDedicatedAsset": true,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Fhome%2FHM_G05_GROWTH_STRATEGIST.webp?alt=media&token=88b4277b-f4b8-4683-b989-fa0b8d2bbeab",
+    "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Fhome%2FHM_G05_GROWTH_STRATEGIST_thumb.webp?alt=media&token=34ed3e56-e46e-4dc8-8cc1-e9137aa32489"
+  },
+  {
+    "id": "HM_G06_ART_WALKER",
+    "code": "HM_G06",
+    "screenType": "HOME",
+    "hasDedicatedAsset": true,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Fhome%2FHM_G06_ART_WALKER.webp?alt=media&token=fcea8672-2fae-47d4-97ae-6915d6c95fcf",
+    "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Fhome%2FHM_G06_ART_WALKER_thumb.webp?alt=media&token=a831e595-9942-4484-8942-a9037cfc14af"
+  },
+  {
+    "id": "HM_P01_ALL_ROUNDER",
+    "code": "HM_P01",
+    "screenType": "HOME",
+    "hasDedicatedAsset": true,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Fhome%2FHM_P01_ALL_ROUNDER.webp?alt=media&token=864ab2f3-90fc-44a7-b759-cfa49477a2e7",
+    "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Fhome%2FHM_P01_ALL_ROUNDER_thumb.webp?alt=media&token=0df81c9f-c06b-4a09-85f3-7ef6c3b111a3"
+  },
+  {
+    "id": "HM_P02_PARALLEL_READER",
+    "code": "HM_P02",
+    "screenType": "HOME",
+    "hasDedicatedAsset": true,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Fhome%2FHM_P02_PARALLEL_READER.webp?alt=media&token=0eaa4908-463c-4ec0-a5c7-9e665e154170",
+    "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Fhome%2FHM_P02_PARALLEL_READER_thumb.webp?alt=media&token=b918cfbd-0564-42cf-a0ef-dbb68fbe3d17"
+  },
+  {
+    "id": "HM_P03_STUDY_LEADER",
+    "code": "HM_P03",
+    "screenType": "HOME",
+    "hasDedicatedAsset": true,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Fhome%2FHM_P03_STUDY_LEADER.webp?alt=media&token=5d1d2a6e-e6c9-48d6-9a1e-a99c778616f8",
+    "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Fhome%2FHM_P03_STUDY_LEADER_thumb.webp?alt=media&token=4dfefc32-4e4a-45a9-88c1-4afae80b5b5f"
+  },
+  {
+    "id": "HM_P04_DAILY_ROUTINE",
+    "code": "HM_P04",
+    "screenType": "HOME",
+    "hasDedicatedAsset": true,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Fhome%2FHM_P04_DAILY_ROUTINE.webp?alt=media&token=d6668087-b0ef-4cd8-a16c-261d174bdb8d",
+    "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Fhome%2FHM_P04_DAILY_ROUTINE_thumb.webp?alt=media&token=868c96c8-fc6e-4974-bf2e-f96f1df8b45c"
+  },
+  {
+    "id": "RC_F01_DEEP_CRITIC",
+    "code": "RC_F01",
+    "screenType": "RECORD",
+    "hasDedicatedAsset": true,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Frecord%2FRC_F01_DEEP_CRITIC.webp?alt=media&token=143f5193-c932-4c9a-ab96-61d7b8d5cbb1",
+    "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Frecord%2FRC_F01_DEEP_CRITIC_thumb.webp?alt=media&token=d5fe1fe7-2350-4a62-8d1c-fd1fa1720d53"
+  },
+  {
+    "id": "RC_F02_DAILY_SKETCHER",
+    "code": "RC_F02",
+    "screenType": "RECORD",
+    "hasDedicatedAsset": true,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Frecord%2FRC_F02_DAILY_SKETCHER.webp?alt=media&token=03c3dad7-408b-4473-a73f-d5dc39d0c285",
+    "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Frecord%2FRC_F02_DAILY_SKETCHER_thumb.webp?alt=media&token=f8a0ba39-7171-425e-9f3b-f8f8d46203a3"
+  },
+  {
+    "id": "RC_F03_SENTENCE_COLLECTOR",
+    "code": "RC_F03",
+    "screenType": "RECORD",
+    "hasDedicatedAsset": true,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Frecord%2FRC_F03_SENTENCE_COLLECTOR.webp?alt=media&token=d555dbe9-1fef-43a7-b471-5c64c7f74f87",
+    "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Frecord%2FRC_F03_SENTENCE_COLLECTOR_thumb.webp?alt=media&token=8154e6eb-6084-4150-ba8b-041f53d64991"
+  },
+  {
+    "id": "RC_F04_DILIGENT_ARCHIVIST",
+    "code": "RC_F04",
+    "screenType": "RECORD",
+    "hasDedicatedAsset": true,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Frecord%2FRC_F04_DILIGENT_ARCHIVIST.webp?alt=media&token=b8062a21-186d-455f-9784-f3a6de2c3674",
+    "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Frecord%2FRC_F04_DILIGENT_ARCHIVIST_thumb.webp?alt=media&token=9de3808d-926e-4bc4-baa2-1ea6c7f6772c"
+  },
+  {
+    "id": "RC_F05_MINIMAL_READER",
+    "code": "RC_F05",
+    "screenType": "RECORD",
+    "hasDedicatedAsset": true,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Frecord%2FRC_F05_MINIMAL_READER.webp?alt=media&token=2279b3d5-4ecd-449c-bbc7-e02e3e8ad44c",
+    "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Frecord%2FRC_F05_MINIMAL_READER_thumb.webp?alt=media&token=9914406a-354d-4cf6-8ffb-1e4db67bc5d5"
+  },
+  {
+    "id": "RC_S01_LYRICAL_ESSAYIST",
+    "code": "RC_S01",
+    "screenType": "RECORD",
+    "hasDedicatedAsset": false,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Fdefault%2FMASCOT_DEFAULT.webp?alt=media&token=32ef2a25-0714-4cb8-8b4d-fe2807cd4278",
+    "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Fdefault%2FMASCOT_DEFAULT_thumb.webp?alt=media&token=630bea4e-e108-4864-b506-8ae9baf61d31"
+  },
+  {
+    "id": "RC_S02_SMART_CRITIC",
+    "code": "RC_S02",
+    "screenType": "RECORD",
+    "hasDedicatedAsset": true,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Frecord%2FRC_S02_SMART_CRITIC.webp?alt=media&token=cf8ebd10-bf4c-4870-8449-d38e57876f40",
+    "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Frecord%2FRC_S02_SMART_CRITIC_thumb.webp?alt=media&token=15e2eb8e-0787-4e47-83f6-31b5eb56794a"
+  },
+  {
+    "id": "RC_S03_ONE_LINE_CRITIC",
+    "code": "RC_S03",
+    "screenType": "RECORD",
+    "hasDedicatedAsset": true,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Frecord%2FRC_S03_ONE_LINE_CRITIC.webp?alt=media&token=2cb8f03d-25b1-4abc-9b69-c4d4a80a010d",
+    "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Frecord%2FRC_S03_ONE_LINE_CRITIC_thumb.webp?alt=media&token=fd9f0586-4a88-4896-81f6-83ebd60daeb0"
+  },
+  {
+    "id": "RC_S04_ARTISTIC_LOGGER",
+    "code": "RC_S04",
+    "screenType": "RECORD",
+    "hasDedicatedAsset": false,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Fdefault%2FMASCOT_DEFAULT.webp?alt=media&token=32ef2a25-0714-4cb8-8b4d-fe2807cd4278",
+    "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Fdefault%2FMASCOT_DEFAULT_thumb.webp?alt=media&token=630bea4e-e108-4864-b506-8ae9baf61d31"
+  },
+  {
+    "id": "ST_T01_NIGHT_OWL",
+    "code": "ST_T01",
+    "screenType": "INSIGHT",
+    "hasDedicatedAsset": true,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Finsight%2FST_T01_NIGHT_OWL.webp?alt=media&token=e3f77fa3-8688-4227-ba78-75066cdfb493",
+    "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Finsight%2FST_T01_NIGHT_OWL_thumb.webp?alt=media&token=23ba8e18-41ac-4b9b-b43e-69449cfa65c5"
+  },
+  {
+    "id": "ST_T02_EARLY_BIRD",
+    "code": "ST_T02",
+    "screenType": "INSIGHT",
+    "hasDedicatedAsset": true,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Finsight%2FST_T02_EARLY_BIRD.webp?alt=media&token=f4623865-5507-44a5-8504-b3f81deb4395",
+    "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Finsight%2FST_T02_EARLY_BIRD_thumb.webp?alt=media&token=d844138d-4440-4e82-9715-99c11857ea0d"
+  },
+  {
+    "id": "ST_T03_LUNCH_READER",
+    "code": "ST_T03",
+    "screenType": "INSIGHT",
+    "hasDedicatedAsset": true,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Finsight%2FST_T03_LUNCH_READER.webp?alt=media&token=63334ae7-3fed-4884-bd10-cfcfa8366f93",
+    "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Finsight%2FST_T03_LUNCH_READER_thumb.webp?alt=media&token=dc81f2b5-67fa-4fa0-b4df-c373708ca67f"
+  },
+  {
+    "id": "ST_T04_EVENING_READER",
+    "code": "ST_T04",
+    "screenType": "INSIGHT",
+    "hasDedicatedAsset": true,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Finsight%2FST_T04_EVENING_READER.webp?alt=media&token=db35f39d-1eb2-4878-90b6-5201d41512fb",
+    "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Finsight%2FST_T04_EVENING_READER_thumb.webp?alt=media&token=c31412de-4807-4179-9ef3-0e647db724a6"
+  },
+  {
+    "id": "ST_T05_WEEKEND_IMMERSER",
+    "code": "ST_T05",
+    "screenType": "INSIGHT",
+    "hasDedicatedAsset": true,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Finsight%2FST_T05_WEEKEND_IMMERSER.webp?alt=media&token=4fa01987-ea3c-43f4-ba1f-40b4ab6e59ef",
+    "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/book-track-10.firebasestorage.app/o/personas%2Finsight%2FST_T05_WEEKEND_IMMERSER_thumb.webp?alt=media&token=884d04bc-2c3c-4557-a36d-6b0820108525"
+  }
+]
