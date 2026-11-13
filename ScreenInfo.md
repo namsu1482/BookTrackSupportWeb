@@ -37,7 +37,7 @@
 | **SCR-008** | `SearchScreen`               | 도서 검색 및 탐색 화면         | 탐색 / 검색     | 완료        | [베스트셀러](screen_captures/05_search/SCR-008_SearchScreen.png) / [맞춤추천&AI사유](screen_captures/05_search/SCR-008_SearchScreen_TailoredRecommendation.png) |
 | **SCR-009** | `DetailScreen`               | 도서 상세 화면 (바텀시트 개편)    | 탐색 / 검색     | 완료        | [보기](screen_captures/06_detail/SCR-009_DetailScreen.png)                  |
 | **SCR-010** | `TimerScreen`                | 독서 타이머 화면             | 독서 타이머      | 완료        | [보기](screen_captures/07_timer/SCR-010_TimerScreen.png)                    |
-| **SCR-011** | `InsightsScreen`             | 독서 통계 및 캘린더 화면        | 독서 통계       | 완료        | [보기](screen_captures/09_insights/SCR-011_InsightsScreen.png)              |
+| **SCR-011** | `InsightsScreen`             | 독서 통계 및 캘린더 화면        | 독서 통계       | 완료        | [요약](screen_captures/09_insights/SCR-011_InsightsScreen.png) / [24H패턴](screen_captures/09_insights/SCR-027_InsightsPatternView.png) / [책등서가](screen_captures/09_insights/SCR-028_InsightsFinishedBookshelfView.png) |
 | **SCR-012** | `GoalEditScreen`             | 독서 목표 편집 화면           | 독서 통계       | 완료        | [보기](screen_captures/09_insights/SCR-012_GoalEditScreen.png)              |
 | **SCR-013** | `AllTimeReadingRecordScreen` | 역대 전체 독서 기록 화면        | 독서 통계       | 완료        | [보기](screen_captures/09_insights/SCR-013_AllTimeReadingRecordScreen.png)  |
 | **SCR-014** | `ReviewScreen`               | 독서 기록 / 스크랩북 피드 화면    | 독서 기록       | 완료        | [보기](screen_captures/08_record/SCR-014_ReviewScreen.png)                  |
@@ -53,6 +53,8 @@
 | **SCR-024** | `MemberLibraryScreen`        | 그룹원 서재 구경 화면          | 독서 그룹       | 완료        | [보기](screen_captures/11_group/SCR-024_MemberLibraryScreen.png)            |
 | **SCR-025** | `PersonaCatalogScreen`       | 독서 페르소나 24종 도감 화면     | 홈 / 통계      | 완료        | [보기](screen_captures/10_social/SCR-025_PersonaCatalogScreen.png)          |
 | **SCR-026** | `MoreScreen`                 | 더보기 메뉴 화면             | 더보기 / 설정    | 완료        | [보기](screen_captures/12_more/SCR-026_MoreScreen.png)                      |
+| **SCR-027** | `InsightsPatternView`        | 독서 통계 - 주간/24시간 패턴 화면 | 독서 통계       | 완료        | [보기](screen_captures/09_insights/SCR-027_InsightsPatternView.png)        |
+| **SCR-028** | `InsightsFinishedBookshelfView` | 독서 통계 - 월간 실물 책등 서가 화면 | 독서 통계       | 완료        | [보기](screen_captures/09_insights/SCR-028_InsightsFinishedBookshelfView.png) |
 
 ---
 
@@ -332,6 +334,23 @@
   - 테마 설정 (시스템, 라이트, 다크 모드)
   - 데이터 백업/복원 및 사용자 지원 링크
 
+### SCR-027: 독서 통계 - 일간 독서 시간 & 24시간 독서 패턴 화면 (`HourlyHeatmapSection.kt`)
+- **소스 경로**: `composeApp/src/commonMain/kotlin/com/cns/booktrack/feature/insights/ui/components/HourlyHeatmapSection.kt` (부모: `InsightsScreen.kt`)
+- **스크린샷**: [screen_captures/09_insights/SCR-027_InsightsPatternView.png](screen_captures/09_insights/SCR-027_InsightsPatternView.png) (완료)
+- **주요 기능**:
+  - **일간 독서 시간 막대 차트**: 요일별(월~일) 독서 시간을 직관적인 막대 그래프로 시각화하여 주중/주말 독서 패턴을 한눈에 비교
+  - **24시간 독서 패턴 블록 히트맵**: 00시부터 23시까지 24개의 시간대 블록으로 하루 중 어느 시간대에 가장 집중하여 읽었는지 분 단위로 분석 (독서 세션 집중 구간 컬러 하이라이트)
+  - **주간 골드 코어타임 요약 배너**: 한 주간 가장 집중도가 높았던 황금 시간대와 점유율을 도출하여 카드 형태로 강조 안내 (예: "7시 ~ 9시 동안 주간 독서의 49%를 집중했어요!")
+
+### SCR-028: 독서 통계 - 월간 완독 실물 책등 서가 화면 (`MonthlyFinishedBookshelfSection.kt`)
+- **소스 경로**: `composeApp/src/commonMain/kotlin/com/cns/booktrack/feature/insights/ui/components/MonthlyFinishedBookshelfSection.kt` (부모: `InsightsScreen.kt`)
+- **스크린샷**: [screen_captures/09_insights/SCR-028_InsightsFinishedBookshelfView.png](screen_captures/09_insights/SCR-028_InsightsFinishedBookshelfView.png) (완료)
+- **주요 기능**:
+  - **월간 완독 지표 브리핑**: 당월 완독 권수(예: 11월 완독 5권), 총 완독 페이지 수, 작성한 독서기록 수를 상단에 집계 표출
+  - **감성 실물 책등 원목 서가 렌더링**: 완독한 도서들의 실제 책등(`sideCoverUrl`) 높이와 두께 비율을 계산하여 아날로그 원목 책장에 나란히 꽂힌 인포그래픽 형태로 시각화
+  - **도서 인터랙션**: 꽂혀 있는 책등 터치 시 해당 도서의 상세 정보(`SCR-009`) 또는 작성된 독서 기록 뷰어로 원클릭 이동
+  - **포스터 이미지 내보내기/공유 연동**: 한 달간의 독서 성취를 담은 책등 서가 비주얼 리포트를 갤러리에 저장하거나 SNS로 공유 가능
+
 ---
 
 ## 5. 모달 / 다이얼로그별 상세 기능 명세서
@@ -418,6 +437,7 @@
 
 | 일자 | 대상 ID | 작업 구분 | 주요 변경 내역 요약 |
 | :--- | :--- | :--- | :--- |
+| **2026-11-13** | **SCR-027, SCR-028** | 신규 화면 ID 등록 | 독서 통계 화면(SCR-011) 내 일간/24시간 패턴 뷰(SCR-027) 및 월간 완독 실물 책등 서가 인포그래픽 뷰(SCR-028) 신규 화면 ID 부여 및 실기기 캡처본(SCR-027_InsightsPatternView.png, SCR-028_InsightsFinishedBookshelfView.png) 등록 |
 | **2026-11-13** | **SCR-008** | 실기기 캡처 및 화면 정보 추가 | 도서 검색 화면(SCR-008) 내 '✨ 맞춤 추천' 탭 대형 카드 캐러셀 및 '💡 맞춤 추천 이유' 팝업 툴팁 실기기 스크린샷(SCR-008_SearchScreen_TailoredRecommendation.png) 추가 및 AI 추천 이유 스펙 정의 |
 | **2026-11-12** | **스토어 이미지** | 프로모션 에셋 | Android(941x1672) 6종, iOS(1320x2868) 6종 스토어 프로모션 이미지 자동 생성 및 피그마 캔버스 업로드 완료 (store_image_gen.md) |
 | **2026-11-12** | **SCR-001 ~ SCR-026** | 전수 캡처 완료 | 전체 화면 26종 실기기 adb 자동 캡처 100% 완료 및 모달 7종 캡처 완료 (비활성 3종 상태 확정) |
@@ -446,7 +466,7 @@
 ---
 
 ### 최종 실기기 캡처 및 화면 정의서 완료 보고
-- **전체 화면 (`SCR-001 ~ SCR-026`)**: **26개 중 26개 100% 실기기 캡처 완료**
+- **전체 화면 (`SCR-001 ~ SCR-028`)**: **28개 100% 실기기 캡처 완료**
 - **주요 모달 (`MOD-001 ~ MOD-010`)**: **7개 캡처 완료**, 3개(MOD-006, MOD-007, MOD-010) 정책 확정
-- **총 실기기 캡처 파일 수**: **33개 스크린샷 파일 확보 및 대분류별 정리 완료**
+- **총 실기기 캡처 파일 수**: **36개 스크린샷 파일 확보 및 대분류별 정리 완료**
 - **옵시디언 볼트 동기화**: `docs/ScreenInfo.md` 및 `docs/screen_captures/` 실시간 양방향 동기화 완료
