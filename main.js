@@ -284,9 +284,9 @@ const HERO_IMAGES = {
         'screen_captures/04_library/SCR-007_LibraryScreen.png',
         'assets/figma_images/sec1_timer.png',
         'screen_captures/10_social/SCR-025_PersonaCatalogScreen.png',
-        'assets/figma_images/sec3_record_dashboard.png',
+        'screen_captures/08_record/SCR-014_RecordDashboardScreen.png',
         'screen_captures/08_record/SCR-020_ReviewSavePreviewScreen.png',
-        'assets/figma_images/sec6_monthly_insight.png',
+        'screen_captures/09_insights/SCR-028_InsightsFinishedBookshelfView.png',
         'screen_captures/09_insights/SCR-013_AllTimeReadingRecordScreen.png'
     ],
     en: [
@@ -296,7 +296,7 @@ const HERO_IMAGES = {
         'storeData/android/en/ChatGPT Image 2026년 8월 25일 오후 05_11_26 (7).png',
         'storeData/android/en/08_reading_log_all.png',
         'storeData/android/en/ChatGPT Image 2026년 8월 25일 오후 05_11_26 (5).png',
-        'assets/figma_images/sec6_monthly_insight.png',
+        'screen_captures/09_insights/SCR-028_InsightsFinishedBookshelfView.png',
         'screen_captures/09_insights/SCR-013_AllTimeReadingRecordScreen.png'
     ]
 };
