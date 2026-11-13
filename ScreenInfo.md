@@ -34,7 +34,7 @@
 | **SCR-005** | `MainScreen`                 | 메인 셸 (하단 바텀 네비게이션)    | 메인 셸        | 완료        | [보기](screen_captures/02_main/SCR-005_MainScreen.png)                      |
 | **SCR-006** | `HomeScreen`                 | 메인 대시보드 / 홈 화면        | 홈           | 완료        | [보기](screen_captures/03_home/SCR-006_HomeScreen.png)                      |
 | **SCR-007** | `LibraryScreen`              | 내 서재 화면 (도서/감상평 탭)    | 내 서재        | 완료        | [보기](screen_captures/04_library/SCR-007_LibraryScreen.png)                |
-| **SCR-008** | `SearchScreen`               | 도서 검색 및 탐색 화면         | 탐색 / 검색     | 완료        | [보기](screen_captures/05_search/SCR-008_SearchScreen.png)                  |
+| **SCR-008** | `SearchScreen`               | 도서 검색 및 탐색 화면         | 탐색 / 검색     | 완료        | [베스트셀러](screen_captures/05_search/SCR-008_SearchScreen.png) / [맞춤추천&AI사유](screen_captures/05_search/SCR-008_SearchScreen_TailoredRecommendation.png) |
 | **SCR-009** | `DetailScreen`               | 도서 상세 화면 (바텀시트 개편)    | 탐색 / 검색     | 완료        | [보기](screen_captures/06_detail/SCR-009_DetailScreen.png)                  |
 | **SCR-010** | `TimerScreen`                | 독서 타이머 화면             | 독서 타이머      | 완료        | [보기](screen_captures/07_timer/SCR-010_TimerScreen.png)                    |
 | **SCR-011** | `InsightsScreen`             | 독서 통계 및 캘린더 화면        | 독서 통계       | 완료        | [보기](screen_captures/09_insights/SCR-011_InsightsScreen.png)              |
@@ -142,12 +142,20 @@
 
 ### SCR-008: 도서 검색 및 탐색 화면 (`SearchScreen.kt`)
 - **소스 경로**: `composeApp/src/commonMain/kotlin/com/cns/booktrack/feature/search/ui/SearchScreen.kt`
-- **스크린샷**: [screen_captures/05_search/SCR-008_SearchScreen.png](screen_captures/05_search/SCR-008_SearchScreen.png) (완료)
+- **스크린샷**:
+  - 기본 검색 / 베스트셀러 뷰: [screen_captures/05_search/SCR-008_SearchScreen.png](screen_captures/05_search/SCR-008_SearchScreen.png) (완료)
+  - 맞춤 추천 탭 & AI 추천 이유 팝업 툴팁: [screen_captures/05_search/SCR-008_SearchScreen_TailoredRecommendation.png](screen_captures/05_search/SCR-008_SearchScreen_TailoredRecommendation.png) (완료)
 - **주요 기능**:
   - 알라딘, 네이버, NYT API 통합 도서 검색 (제목, 저자, 출판사, ISBN)
   - 카메라 바코드(ISBN) 스캔을 통한 즉시 검색
   - 카메라 OCR 촬영을 통한 인용구 텍스트 추출
-  - 상단 4대 추천 탭: 베스트셀러, 검색 결과, 해외 베스트, 맞춤 추천
+  - 상단 4대 추천 탭: 국내 베스트셀러, 해외 베스트셀러, 맞춤 추천, 검색 결과
+  - **AI 개인화 맞춤 도서 추천 캐러셀 (`✨ 맞춤 추천`)**:
+    - 내 서재에 등록된 도서(최소 3권 이상) 및 독서 기록(선호 장르, 키워드, 최근 완독 도서)을 분석하여 개인화된 맞춤 추천 도서(최대 11권)를 대형 카드 캐러셀(`1 / 11`)로 제공
+    - 추천 번호 뱃지(`✨ 맞춤 추천 #N`) 내 정보(ⓘ) 아이콘 터치 시 **`💡 맞춤 추천 이유`** 말풍선 팝업(Tooltip Popup) 노출
+    - 사용자 닉네임과 취향을 반영한 구체적인 감상 분석 사유 안내 (예: "천 개의 파랑처럼 인공지능의 시선에서 인간의 다정한 온기를 탐구하는 작품으로 naaaaaam님의 SF 감성을 깊이 채워줄 것입니다.")
+    - 우상단 새로고침(↻) 버튼을 통한 Firebase Cloud Function 비차단(Non-blocking) 백그라운드 AI 추천 실시간 재생성 및 목록 갱신 지원
+    - 카드 터치 또는 `[도서 상세보기 ->]` 클릭 시 도서 상세 바텀시트(`SCR-009`)로 즉시 이동
   - 무한 스크롤 페이징(Paging) 및 당겨서 새로고침(Pull-to-Refresh)
   - 검색 결과 목록 내 네이티브 피드 광고 슬롯 지원
 
@@ -410,6 +418,7 @@
 
 | 일자 | 대상 ID | 작업 구분 | 주요 변경 내역 요약 |
 | :--- | :--- | :--- | :--- |
+| **2026-11-13** | **SCR-008** | 실기기 캡처 및 화면 정보 추가 | 도서 검색 화면(SCR-008) 내 '✨ 맞춤 추천' 탭 대형 카드 캐러셀 및 '💡 맞춤 추천 이유' 팝업 툴팁 실기기 스크린샷(SCR-008_SearchScreen_TailoredRecommendation.png) 추가 및 AI 추천 이유 스펙 정의 |
 | **2026-11-12** | **스토어 이미지** | 프로모션 에셋 | Android(941x1672) 6종, iOS(1320x2868) 6종 스토어 프로모션 이미지 자동 생성 및 피그마 캔버스 업로드 완료 (store_image_gen.md) |
 | **2026-11-12** | **SCR-001 ~ SCR-026** | 전수 캡처 완료 | 전체 화면 26종 실기기 adb 자동 캡처 100% 완료 및 모달 7종 캡처 완료 (비활성 3종 상태 확정) |
 | **2026-11-12** | **전체** | 실기기 캡처 | 방안 2(에이전트 adb 자동 탐색) 및 대분류 디렉토리 체계로 실기기 스크린샷 총 29개(화면 22종, 모달 7종) 캡처 및 1:1 링크 반영 |
