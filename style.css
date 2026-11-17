@@ -814,6 +814,13 @@ a {
     display: flex;
     flex-direction: column;
     gap: 18px;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.showcase-visual-area {
+    min-width: 0;
+    max-width: 100%;
 }
 
 /* Notion Card Block */
@@ -824,6 +831,9 @@ a {
     padding: 20px 24px;
     transition: var(--transition-fast);
     box-shadow: var(--shadow-xs);
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .notion-card-block:hover {
@@ -835,20 +845,26 @@ a {
 
 .card-bullet-header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
     margin-bottom: 8px;
+    min-width: 0;
 }
 
 .bullet-emoji {
     font-size: 1.35rem;
-    line-height: 1;
+    line-height: 1.2;
+    flex-shrink: 0;
 }
 
 .card-bullet-header h3 {
     font-size: 1.12rem;
     font-weight: 800;
     color: var(--text-main);
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    min-width: 0;
+    flex: 1;
 }
 
 .notion-card-block p {
@@ -856,6 +872,9 @@ a {
     color: var(--text-sub);
     line-height: 1.68;
     margin-left: 34px;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    min-width: 0;
 }
 
 /* Screen Tab Switcher Pills */
@@ -864,6 +883,8 @@ a {
     flex-wrap: wrap;
     gap: 8px;
     margin-top: 8px;
+    min-width: 0;
+    max-width: 100%;
 }
 
 .screen-tab {
@@ -877,6 +898,7 @@ a {
     cursor: pointer;
     transition: var(--transition-fast);
     box-shadow: var(--shadow-xs);
+    box-sizing: border-box;
 }
 
 .screen-tab:hover {
@@ -1571,24 +1593,39 @@ footer {
         padding: 56px 0;
     }
     .section-badge-wrap {
-        justify-content: center;
-        margin-bottom: 10px;
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+        margin-bottom: 12px;
+    }
+    .notion-badge {
+        max-width: 100% !important;
+        font-size: 0.78rem !important;
+        padding: 5px 12px !important;
+        white-space: normal !important;
+        word-break: keep-all !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+        line-height: 1.35 !important;
     }
     .section-title-wrap {
         text-align: center;
         margin-bottom: 24px;
+        width: 100% !important;
+        box-sizing: border-box !important;
     }
     .section-main-title {
-        font-size: clamp(1.5rem, 5.2vw, 1.95rem);
+        font-size: clamp(1.48rem, 5.2vw, 1.95rem);
         text-align: center;
         word-break: keep-all;
         line-height: 1.34;
+        width: 100% !important;
     }
     .section-lead-quote {
-        font-size: 0.94rem;
+        font-size: 0.92rem;
         line-height: 1.62;
         text-align: left;
-        padding: 12px 16px;
+        padding: 12px 14px;
         background: #FFFFFF;
         border-radius: var(--radius-md);
         border-left: 3.5px solid var(--brand-royal);
@@ -1596,92 +1633,120 @@ footer {
         word-break: keep-all;
         max-width: 680px;
         margin: 0 auto;
+        box-sizing: border-box !important;
     }
 
     /* Showcase Layout */
     .feature-showcase-grid,
     .feature-showcase-grid.reverse {
         grid-template-columns: 1fr !important;
-        gap: 26px !important;
+        gap: 24px !important;
         width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
         box-sizing: border-box !important;
     }
     .feature-showcase-grid .showcase-content-area,
     .feature-showcase-grid.reverse .showcase-content-area {
         order: 1 !important;
         width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
         box-sizing: border-box !important;
-        gap: 14px;
+        gap: 12px;
     }
     .feature-showcase-grid .showcase-visual-area,
     .feature-showcase-grid.reverse .showcase-visual-area {
         order: 2 !important;
         width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
         box-sizing: border-box !important;
         display: flex;
         justify-content: center;
     }
 
-    /* Notion Card Block */
+    /* Notion Card Block - Responsive Zero-Overflow */
     .notion-card-block {
         width: 100% !important;
         max-width: 100% !important;
+        min-width: 0 !important;
         box-sizing: border-box !important;
-        padding: 16px 18px !important;
+        padding: 15px 15px !important;
         border-radius: var(--radius-md);
         margin: 0 0 10px 0;
+        overflow: hidden;
     }
     .card-bullet-header {
+        display: flex !important;
+        align-items: flex-start !important;
+        gap: 10px !important;
         margin-bottom: 6px;
+        min-width: 0 !important;
+        width: 100% !important;
+    }
+    .bullet-emoji {
+        font-size: 1.25rem !important;
+        line-height: 1.2 !important;
+        flex-shrink: 0 !important;
     }
     .card-bullet-header h3 {
-        font-size: 1.04rem;
-        word-break: keep-all;
+        font-size: 1.02rem !important;
+        line-height: 1.38 !important;
+        word-break: keep-all !important;
+        overflow-wrap: break-word !important;
+        min-width: 0 !important;
+        flex: 1 !important;
     }
     .notion-card-block p {
         margin-left: 0 !important;
         margin-top: 4px;
-        font-size: 0.88rem;
-        line-height: 1.6;
-        word-break: keep-all;
+        font-size: 0.88rem !important;
+        line-height: 1.62 !important;
+        word-break: keep-all !important;
+        overflow-wrap: break-word !important;
+        min-width: 0 !important;
+        width: 100% !important;
     }
 
-    /* Screen Tab Switcher Pills - Horizontal Touch Scroll */
+    /* Screen Tab Switcher Pills - Responsive Wrapped Chips (No Clipping) */
     .screen-tab-pills {
         display: flex !important;
-        flex-wrap: nowrap !important;
-        overflow-x: auto !important;
-        -webkit-overflow-scrolling: touch !important;
-        padding: 4px 2px 10px !important;
-        gap: 8px !important;
-        scrollbar-width: none !important;
-        -ms-overflow-style: none !important;
+        flex-wrap: wrap !important;
+        overflow: visible !important;
+        padding: 6px 0 10px !important;
+        gap: 6px !important;
         width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
         box-sizing: border-box !important;
     }
-    .screen-tab-pills::-webkit-scrollbar {
-        display: none !important;
-    }
     .screen-tab {
-        flex-shrink: 0 !important;
+        flex: 1 1 auto !important;
         white-space: nowrap !important;
-        font-size: 0.82rem !important;
-        padding: 8px 14px !important;
+        font-size: 0.78rem !important;
+        padding: 7px 11px !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
     }
 
     /* Section 5 4-View Switcher */
     .dual-view-switcher {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 6px;
-        padding: 6px;
-        width: 100%;
-        box-sizing: border-box;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 6px !important;
+        padding: 6px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
     }
     .view-btn {
-        padding: 9px 8px;
-        font-size: 0.8rem;
-        gap: 5px;
-        justify-content: center;
+        padding: 9px 6px !important;
+        font-size: 0.78rem !important;
+        gap: 5px !important;
+        justify-content: center !important;
+        min-width: 0 !important;
+        white-space: nowrap !important;
     }
 
     /* Showcase Mockup Frame */
@@ -1693,6 +1758,7 @@ footer {
         border-radius: 36px !important;
         padding: 7px !important;
         margin: 0 auto !important;
+        box-sizing: border-box !important;
     }
     .showcase-mockup-frame:hover {
         transform: none;
@@ -1708,18 +1774,26 @@ footer {
         margin-bottom: 24px;
         width: 100%;
         box-sizing: border-box;
+        min-width: 0;
     }
     .bookowl-chip {
         padding: 8px 10px;
         gap: 8px;
+        min-width: 0;
+        box-sizing: border-box;
     }
     .bookowl-chip img {
         width: 36px;
         height: 36px;
+        flex-shrink: 0;
+    }
+    .bookowl-chip-info {
+        min-width: 0;
     }
     .bookowl-chip-info strong {
         font-size: 0.78rem;
         word-break: keep-all;
+        overflow-wrap: break-word;
     }
 
     /* Section 6 Bento Grid */
@@ -1915,23 +1989,32 @@ footer {
     }
 
     .feature-section {
-        padding: 48px 0;
+        padding: 46px 0;
     }
     .section-main-title {
         font-size: clamp(1.35rem, 5.8vw, 1.65rem);
     }
     .section-lead-quote {
         font-size: 0.88rem;
-        padding: 10px 14px;
+        padding: 10px 12px;
     }
     .notion-card-block {
-        padding: 14px 14px !important;
+        padding: 13px 13px !important;
     }
     .card-bullet-header h3 {
-        font-size: 0.98rem;
+        font-size: 0.96rem !important;
     }
     .notion-card-block p {
-        font-size: 0.84rem;
+        font-size: 0.84rem !important;
+    }
+
+    .screen-tab-pills {
+        gap: 5px !important;
+        padding: 4px 0 8px !important;
+    }
+    .screen-tab {
+        font-size: 0.74rem !important;
+        padding: 6px 9px !important;
     }
 
     .bookowl-strip {
@@ -1954,8 +2037,8 @@ footer {
     }
 
     .dual-view-switcher .view-btn {
-        font-size: 0.75rem;
-        padding: 8px 6px;
+        font-size: 0.74rem !important;
+        padding: 7px 4px !important;
     }
 
     .showcase-mockup-frame {
