@@ -72,6 +72,8 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -81,6 +83,7 @@ body {
     font-family: var(--font-body);
     line-height: 1.65;
     overflow-x: hidden;
+    width: 100%;
     position: relative;
     min-height: 100vh;
 }
@@ -535,7 +538,7 @@ a {
 
 .mockup-backdrop-glow {
     position: absolute;
-    width: 440px;
+    width: min(440px, 90vw);
     height: 600px;
     background: var(--grad-hero-glow);
     filter: blur(45px);
@@ -544,8 +547,9 @@ a {
 
 .device-frame {
     position: relative;
-    width: 300px;
-    height: 610px;
+    width: min(300px, 84vw);
+    height: auto;
+    aspect-ratio: 9 / 18.8;
     background: #111827;
     border-radius: 44px;
     padding: 10px;
@@ -568,8 +572,9 @@ a {
 
 .device-frame.device-rear {
     position: absolute;
-    width: 268px;
-    height: 545px;
+    width: min(268px, 75vw);
+    height: auto;
+    aspect-ratio: 9 / 18.8;
     left: 10px;
     top: 48px;
     z-index: 2;
@@ -929,8 +934,9 @@ a {
 
 .showcase-mockup-frame {
     position: relative;
-    width: 325px;
-    height: 650px;
+    width: min(325px, 86vw);
+    height: auto;
+    aspect-ratio: 9 / 18.5;
     background: #111827;
     border-radius: 44px;
     padding: 10px;
@@ -1032,8 +1038,9 @@ a {
 }
 
 .bento-phone-frame {
-    width: 260px;
-    height: 460px;
+    width: min(260px, 80vw);
+    height: auto;
+    aspect-ratio: 9 / 16;
     background: #111827;
     border-radius: 36px 36px 0 0;
     padding: 8px 8px 0;
@@ -1378,66 +1385,530 @@ footer {
     transform: translateY(0);
 }
 
-/* Responsive Breakpoints */
+/* ==========================================================================
+   Comprehensive Responsive System (Mobile-First Polish)
+   ========================================================================== */
+
+/* Tablet Landscape & Medium Desktops (<= 1120px) */
 @media (max-width: 1120px) {
+    .container {
+        padding: 0 20px;
+    }
+    .hero-grid {
+        gap: 36px;
+    }
     .bookowl-strip {
         grid-template-columns: repeat(3, 1fr);
     }
+    .feature-showcase-grid,
+    .feature-showcase-grid.reverse {
+        gap: 40px;
+    }
     .bento-grid {
         grid-template-columns: 1fr;
+        gap: 28px;
     }
 }
 
+/* Tablet Portrait & Mobile (<= 960px) */
 @media (max-width: 960px) {
-    .hero-grid,
-    .feature-showcase-grid,
-    .feature-showcase-grid.reverse,
-    .download-banner {
-        grid-template-columns: 1fr;
-        gap: 42px;
+    .nav-links {
+        display: none;
     }
-    .feature-showcase-grid.reverse .showcase-content-area { order: 1; }
-    .feature-showcase-grid.reverse .showcase-visual-area { order: 2; }
+    .header-container {
+        height: 64px;
+    }
+    .btn-header-cta {
+        display: none;
+    }
+    .app-tagline {
+        display: none;
+    }
+
+    #hero {
+        padding: 110px 0 60px;
+        min-height: auto;
+    }
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
     .hero-content {
         align-items: center;
         text-align: center;
     }
-    .store-badges,
-    .hero-feature-tags {
-        justify-content: center;
-    }
-    .nav-links {
-        display: none;
-    }
-}
-
-@media (max-width: 640px) {
-    .bookowl-strip {
-        grid-template-columns: repeat(2, 1fr);
+    .hero-badge-pill {
+        margin-bottom: 16px;
     }
     .hero-title {
-        font-size: 2.25rem;
+        font-size: clamp(2rem, 6.5vw, 2.75rem);
+        text-align: center;
+        word-break: keep-all;
+        margin-bottom: 16px;
     }
-    .section-main-title {
-        font-size: 1.85rem;
+    .hero-description {
+        font-size: 1.05rem;
+        line-height: 1.68;
+        text-align: center;
+        max-width: 580px;
+        margin-bottom: 24px;
+        word-break: keep-all;
+    }
+    .hero-actions {
+        margin-bottom: 24px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .store-badges {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    .hero-feature-tags {
+        justify-content: center;
+        gap: 8px;
+    }
+    .feat-tag {
+        font-size: 0.82rem;
+        padding: 8px 14px;
+    }
+
+    /* Hero Visual Mockup */
+    .hero-visual {
+        min-height: auto;
+        padding: 10px 0;
+        width: 100%;
+    }
+    .mockup-backdrop-glow {
+        width: min(340px, 85vw);
+        height: 420px;
     }
     .device-frame.device-rear {
         display: none;
     }
     .device-frame.device-front {
         transform: none;
+        width: min(290px, 80vw);
+        height: auto;
+        aspect-ratio: 9 / 19;
+        border-radius: 38px;
+        padding: 8px;
+    }
+    .device-frame.device-front:hover {
+        transform: none;
+    }
+    .device-screen {
+        border-radius: 30px;
+    }
+
+    /* Feature Sections */
+    .feature-section {
+        padding: 68px 0;
+    }
+    .section-badge-wrap {
+        justify-content: center;
+        margin-bottom: 12px;
+    }
+    .section-title-wrap {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .section-main-title {
+        font-size: clamp(1.65rem, 5.2vw, 2.15rem);
+        text-align: center;
+        word-break: keep-all;
+        line-height: 1.32;
+    }
+    .section-lead-quote {
+        font-size: 0.98rem;
+        line-height: 1.65;
+        text-align: left;
+        padding: 14px 18px;
+        background: #FFFFFF;
+        border-radius: var(--radius-md);
+        border-left: 3.5px solid var(--brand-royal);
+        box-shadow: var(--shadow-xs);
+        word-break: keep-all;
+        max-width: 680px;
+        margin: 0 auto;
+    }
+
+    /* Showcase Layout */
+    .feature-showcase-grid,
+    .feature-showcase-grid.reverse {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    .feature-showcase-grid .showcase-content-area,
+    .feature-showcase-grid.reverse .showcase-content-area {
+        order: 1;
+        width: 100%;
+        gap: 16px;
+    }
+    .feature-showcase-grid .showcase-visual-area,
+    .feature-showcase-grid.reverse .showcase-visual-area {
+        order: 2;
+        width: 100%;
+    }
+
+    /* Notion Card Block */
+    .notion-card-block {
+        padding: 18px 20px;
+    }
+    .card-bullet-header {
+        margin-bottom: 6px;
+    }
+    .card-bullet-header h3 {
+        font-size: 1.08rem;
+        word-break: keep-all;
+    }
+    .notion-card-block p {
+        margin-left: 0;
+        margin-top: 6px;
+        font-size: 0.9rem;
+        line-height: 1.62;
+        word-break: keep-all;
+    }
+
+    /* Screen Tab Switcher Pills - Horizontal Scroll on Touch */
+    .screen-tab-pills {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding: 4px 2px 10px;
+        gap: 8px;
+        scrollbar-width: none;
+    }
+    .screen-tab-pills::-webkit-scrollbar {
+        display: none;
+    }
+    .screen-tab {
+        flex-shrink: 0;
+        white-space: nowrap;
+        font-size: 0.82rem;
+        padding: 8px 14px;
+    }
+
+    /* Section 5 4-View Switcher */
+    .dual-view-switcher {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+        padding: 6px;
+    }
+    .view-btn {
+        padding: 9px 10px;
+        font-size: 0.82rem;
+        gap: 6px;
+        justify-content: center;
+    }
+
+    /* Showcase Mockup Frame */
+    .showcase-mockup-frame {
+        width: min(295px, 82vw);
+        height: auto;
+        aspect-ratio: 9 / 18.8;
+        border-radius: 38px;
+        padding: 8px;
+        margin: 0 auto;
+    }
+    .showcase-mockup-frame:hover {
+        transform: none;
+    }
+    .mockup-img {
+        border-radius: 30px;
+    }
+
+    /* Section 3 Persona Strip */
+    .bookowl-strip {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+    .bookowl-chip {
+        padding: 8px 10px;
+        gap: 8px;
+    }
+    .bookowl-chip img {
+        width: 38px;
+        height: 38px;
+    }
+    .bookowl-chip-info strong {
+        font-size: 0.8rem;
+        word-break: keep-all;
+    }
+
+    /* Section 6 Bento Grid */
+    .bento-card {
+        padding: 26px 20px;
+        border-radius: var(--radius-lg);
+        gap: 20px;
+    }
+    .bento-header h3 {
+        font-size: 1.25rem;
+        word-break: keep-all;
+    }
+    .bento-header p {
+        font-size: 0.9rem;
+        line-height: 1.62;
+        word-break: keep-all;
+    }
+    .bento-visual {
+        padding: 18px 12px 0;
+    }
+    .bento-phone-frame {
+        width: min(240px, 76vw);
+        height: auto;
+        aspect-ratio: 9 / 15.5;
+        border-radius: 28px 28px 0 0;
+        padding: 6px 6px 0;
+    }
+    .bento-phone-frame img {
+        border-radius: 22px 22px 0 0;
+    }
+
+    /* Section 7 Showcase Carousel */
+    #gallery {
+        padding: 68px 0;
+    }
+    .gallery-tabs {
+        margin-top: 14px;
+        gap: 8px;
+    }
+    .tab-btn {
+        padding: 8px 16px;
+        font-size: 0.84rem;
+    }
+    .carousel-nav-btn {
+        display: none;
+    }
+    .carousel-track-wrapper {
+        padding: 14px 4px 22px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+    }
+    .carousel-track-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+    .gallery-card {
+        flex: 0 0 min(265px, 76vw);
+        scroll-snap-align: center;
+        padding: 12px 12px 18px;
+        border-radius: var(--radius-lg);
+    }
+    .gallery-card:hover {
+        transform: none;
+    }
+    .gallery-card-title {
+        font-size: 0.96rem;
+    }
+    .gallery-card-desc {
+        font-size: 0.8rem;
+    }
+
+    /* Section 8 Outro & Footer */
+    #download {
+        padding: 60px 0 80px;
     }
     .download-banner {
-        padding: 36px 24px;
+        grid-template-columns: 1fr;
+        padding: 40px 24px;
+        gap: 28px;
         text-align: center;
+        border-radius: var(--radius-lg);
     }
+    .download-title {
+        font-size: clamp(1.75rem, 6vw, 2.25rem);
+        line-height: 1.28;
+        word-break: keep-all;
+    }
+    .download-text {
+        font-size: 0.98rem;
+        line-height: 1.65;
+        margin-bottom: 24px;
+        word-break: keep-all;
+    }
+    .download-banner .store-badges {
+        justify-content: center;
+        gap: 10px;
+    }
+    .outro-promo-img {
+        max-width: min(290px, 85vw);
+        border-radius: var(--radius-md);
+    }
+
     .footer-top {
         grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    footer {
+        padding: 48px 0 95px;
     }
     .mobile-floating-cta {
         display: flex;
     }
-    footer {
-        padding-bottom: 100px;
+}
+
+/* Compact Mobile (<= 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+    .version-pill {
+        display: none;
+    }
+    .app-name {
+        font-size: 1.05rem;
+    }
+    .app-logo {
+        width: 34px;
+        height: 34px;
+    }
+    .lang-switcher-wrap {
+        padding: 2px;
+    }
+    .lang-btn {
+        padding: 3px 9px;
+        font-size: 0.72rem;
+    }
+
+    #hero {
+        padding: 95px 0 45px;
+    }
+    .hero-title {
+        font-size: clamp(1.7rem, 7.5vw, 2.1rem);
+    }
+    .hero-description {
+        font-size: 0.94rem;
+        line-height: 1.6;
+    }
+    .store-badges {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .store-badge {
+        width: 100%;
+        max-width: 270px;
+        justify-content: center;
+        padding: 10px 16px;
+    }
+    .feat-tag {
+        font-size: 0.76rem;
+        padding: 6px 10px;
+    }
+
+    .feature-section {
+        padding: 55px 0;
+    }
+    .section-main-title {
+        font-size: clamp(1.38rem, 6vw, 1.7rem);
+    }
+    .section-lead-quote {
+        font-size: 0.9rem;
+        padding: 12px 14px;
+    }
+    .notion-card-block {
+        padding: 15px 16px;
+    }
+    .card-bullet-header h3 {
+        font-size: 1rem;
+    }
+    .notion-card-block p {
+        font-size: 0.85rem;
+    }
+
+    .bookowl-strip {
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+    }
+    .bookowl-chip {
+        padding: 6px 8px;
+        gap: 6px;
+    }
+    .bookowl-chip img {
+        width: 32px;
+        height: 32px;
+    }
+    .bookowl-chip-badge {
+        font-size: 0.58rem;
+    }
+    .bookowl-chip-info strong {
+        font-size: 0.74rem;
+    }
+
+    .dual-view-switcher .view-btn {
+        font-size: 0.75rem;
+        padding: 8px 6px;
+    }
+
+    .bento-card {
+        padding: 20px 16px;
+    }
+    .bento-header h3 {
+        font-size: 1.15rem;
+    }
+
+    .gallery-card {
+        flex: 0 0 min(250px, 80vw);
+    }
+
+    .download-banner {
+        padding: 28px 16px;
+    }
+    .download-banner .store-badges {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Mobile Floating CTA adjustments */
+    .mobile-floating-cta {
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        padding: 8px 12px;
+        border-radius: 16px;
+    }
+    .mobile-cta-brand img {
+        width: 30px;
+        height: 30px;
+    }
+    .mobile-cta-brand strong {
+        font-size: 0.8rem;
+    }
+    .mobile-cta-brand span {
+        display: none;
+    }
+    .mobile-store-pill {
+        padding: 6px 10px;
+        font-size: 0.72rem;
+    }
+}
+
+/* Extra Small Mobile (<= 360px) */
+@media (max-width: 360px) {
+    .bookowl-strip {
+        grid-template-columns: 1fr;
+    }
+    .dual-view-switcher {
+        grid-template-columns: 1fr;
+    }
+    .hero-title {
+        font-size: 1.55rem;
+    }
+    .section-main-title {
+        font-size: 1.32rem;
+    }
+    .mobile-cta-btns {
+        flex-direction: column;
+        gap: 4px;
+    }
+    .mobile-store-pill {
+        padding: 4px 8px;
+        font-size: 0.65rem;
+        text-align: center;
     }
 }
