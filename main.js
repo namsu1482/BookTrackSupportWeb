@@ -715,6 +715,40 @@ function initGalleryShowcase() {
     if (prevBtn) prevBtn.addEventListener('click', () => scrollGallery(-1));
     if (nextBtn) nextBtn.addEventListener('click', () => scrollGallery(1));
 
+    // Touch Swipe Support for Mobile
+    const trackWrapper = document.querySelector('.carousel-track-wrapper');
+    if (trackWrapper) {
+        let touchStartX = 0;
+        let touchEndX = 0;
+        let touchStartY = 0;
+        let touchEndY = 0;
+
+        trackWrapper.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].clientX;
+            touchStartY = e.changedTouches[0].clientY;
+        }, { passive: true });
+
+        trackWrapper.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].clientX;
+            touchEndY = e.changedTouches[0].clientY;
+            const diffX = touchEndX - touchStartX;
+            const diffY = touchEndY - touchStartY;
+            // Only trigger if horizontal swipe is dominant
+            if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 40) {
+                if (diffX < 0) {
+                    scrollGallery(1); // Swipe Left -> Next
+                } else {
+                    scrollGallery(-1); // Swipe Right -> Prev
+                }
+            }
+        }, { passive: true });
+    }
+
+    // Responsive resize handler
+    window.addEventListener('resize', () => {
+        updateGalleryPosition();
+    });
+
     renderGalleryShowcase();
 }
 
@@ -770,7 +804,13 @@ function scrollGallery(direction) {
 function updateGalleryPosition() {
     const track = document.getElementById('gallery-track');
     if (!track) return;
-    const cardWidth = 324; // 300px + 24px gap
+    const card = track.querySelector('.gallery-card');
+    let cardWidth = 324;
+    if (card) {
+        const style = window.getComputedStyle(track);
+        const gap = parseFloat(style.gap) || 16;
+        cardWidth = card.offsetWidth + gap;
+    }
     track.style.transform = `translateX(-${currentGalleryIndex * cardWidth}px)`;
 
     const dots = document.querySelectorAll('#carousel-dots .dot');
